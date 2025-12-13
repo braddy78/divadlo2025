@@ -351,38 +351,36 @@ async function loadShows() {
     // Inicializace dat pro grafy
     let processedData = [];
     
-    async function initData() {
-        await loadShows();
+async function initData() {
+  await loadShows();
 
-        processedData = (shows || []).map(s => {
-            const dateObj = parseDate(s.date);
-            const genresArr = Array.isArray(s.genres) ? s.genres : [];
-            const primaryGenre = (genresArr[0] || '').trim();
-            return {
-                raw: [s.date, s.title, s.theatre, s.place, s.city || '', primaryGenre || (s.genre || '')],
-                date: dateObj,
-                title: s.title,
-                theatre: s.theatre,
-                place: s.place,
-                city: getCity(s),
-                genres: genresArr.map(g => (g || '').trim()).filter(Boolean),
-                genre: primaryGenre || (genresArr[0] || ''),
-                host: !!s.host,
-                removed: !!s.removed,
-                rating: (s.rating === null || s.rating === undefined || s.rating === '') ? null : Number(s.rating),
-                comment: s.comment || '',
-                monthIdx: dateObj.getMonth(),
-                dayIdx: dateObj.getDay()
-            };
-        });
+  processedData = (shows || []).map(s => {
+    const dateObj = parseDate(s.date);
+    const genresArr = Array.isArray(s.genres) ? s.genres : [];
+    const primaryGenre = (genresArr[0] || '').trim();
 
-        populateSelects();
-        updateDashboard();
-    }));
-        
-        populateSelects();
-        updateDashboard();
-    }
+    return {
+      raw: [s.date, s.title, s.theatre, s.place, s.city || '', primaryGenre || (s.genre || '')],
+      date: dateObj,
+      title: s.title,
+      theatre: s.theatre,
+      place: s.place,
+      city: getCity(s),
+      genres: genresArr.map(g => (g || '').trim()).filter(Boolean),
+      genre: primaryGenre || '',
+      host: !!s.host,
+      removed: !!s.removed,
+      rating: (s.rating === null || s.rating === undefined || s.rating === '') ? null : Number(s.rating),
+      comment: s.comment || '',
+      monthIdx: dateObj.getMonth(),
+      dayIdx: dateObj.getDay()
+    };
+  });
+
+  populateSelects();
+  updateDashboard();
+}
+
 
     function populateSelects() {
         const getUnique = (key) => [...new Set(processedData.map(d => d[key]))].sort();
