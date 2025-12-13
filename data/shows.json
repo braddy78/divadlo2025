@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-13T12:57:22.832Z",
+  "generatedAt": "2025-12-13T14:25:42.776Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -140,8 +140,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Nemůžu si pomoct, ale mě tohle prostě z nějakého důvodu skvěle sedlo. Chvílemi mi přišlo že koukám i na něco z Monty Pythons? Jakub Čermák není (nebyl) úplně mainstreamový režisér a tak byl tento jeho krok do klasického divadla očekávaně kontroverzní. Lidé co přišli zavzpomínat na \"Káju\" z toho oprávněně mohli být rozčarovaní. Já se bavil skvěle, písničky které vám evokují hity dávno minulé jsou chytlavé."
     },
     {
       "date": "23.01.2025",
@@ -174,7 +174,7 @@
     {
       "date": "27.01.2025",
       "title": "Norway Today",
-      "theatre": "Divadlo DISK",
+      "theatre": "DAMU",
       "place": "Studio Řetízek",
       "city": "Praha",
       "host": false,
@@ -182,7 +182,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -244,7 +244,7 @@
     {
       "date": "31.01.2025",
       "title": "Peer Gynt",
-      "theatre": "Divadlo DISK",
+      "theatre": "DAMU",
       "place": "Divadlo DISK",
       "city": "Praha",
       "host": false,
@@ -308,7 +308,7 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -337,7 +337,7 @@
         "činohra"
       ],
       "rating": 60,
-      "comment": ""
+      "comment": "Je to taková typická \"zájezdovka\", jakých jsou mraky. I když s trochu (pro českého diváka) netypickou náboženskou tématikou. Ale vidět papeže ve vaně, kdy se vám to poštěstí?"
     },
     {
       "date": "13.02.2025",
@@ -350,7 +350,7 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -364,8 +364,8 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Hru jsem předtím neznal a tak jsem čekal nějaké nudné hutné těžké severské drama. Jaké bylo ale mé překvapení, když se na scéně rozpoutal živel jménem Prokop Košař, kterého jsem do té doby neznal. A jeho pak neméně skvěle odpálkovává M. A. Myšičková. Když se do toho přidá ještě Kateřina Měchurová, strhne se na scéně totální uragán."
     },
     {
       "date": "19.02.2025",
@@ -406,7 +406,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -588,8 +588,8 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Krátká francouzská \"konverzačka\", na které je vidět, že i tento typ her se dá inscenovat vtipně, bez přehrávání."
     },
     {
       "date": "16.03.2025",
@@ -644,7 +644,7 @@
       "genres": [
         "barokní"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -700,7 +700,7 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -1335,7 +1335,7 @@
     },
     {
       "date": "23.08.2025",
-      "title": "Puld a pudr",
+      "title": "Pudl a pudr",
       "theatre": "Geisslers Hofcomoedianten",
       "place": "Theatrum Kuks",
       "city": "Kuks",
@@ -1932,7 +1932,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 100,
       "comment": ""
     },
     {
@@ -1974,8 +1974,8 @@
       "genres": [
         "muzikál"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Autorský muzikál Elizabeth Kateřiny McIntosh, která si v něm střihla i titulní roli. A vlastně se to všechno pěkně sešlo, včetně dobře napsaných textů a zazpívaných partů (Petr Matyáš promine :)). Barbora Poláchová zahrála roli matky tak přesvědčivě, že bych jí fakt věřil, že je matkou Kateřiny. A nemůžu nezmínit Matěje Převrátila coby vtipné rádio."
     },
     {
       "date": "04.12.2025",
@@ -2044,8 +2044,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 50,
+      "comment": "Na začátku když se hra celkem vtipně rozjíždí jako retro automaton, jsem si to docela příjemně užíval. Pak se ale děj stává čím dál méně srozumitelnějším a po pauze už jsem se ztratil úplně. Nedokázal jsem se asi správně naladit na vlnu představení. Možná to bylo i těmi dvěma různými příběhy. Za zmínku stojí výkony Kristýny Jedličkové a Veroniky Lazorčákové. Matyáš Řezníček také potěšil v roli zbabělého policajta."
     },
     {
       "date": "10.12.2025",
@@ -2091,7 +2091,7 @@
     },
     {
       "date": "14.12.2025",
-      "title": "Puld a pudr",
+      "title": "Pudl a pudr",
       "theatre": "Geisslers Hofcomoedianten",
       "place": "Divadlo VILA Štvanice",
       "city": "Praha",
