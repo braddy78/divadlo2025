@@ -90,7 +90,7 @@ Datum,Nazev,Soubor,Misto,Mesto,Hostovacka,StazenoZR,Zanry,Hodnoceni,Komentar
 24.07.2025,Drým Džurny,Ductus Deferens,Usedlost Cibulka,Praha,N,N,alternativní,,
 12.08.2025,Buly divadlo živě,Ductus Deferens,Zámek Brandýs,Brandýs n/L,N,N,alternativní,,
 20.08.2025,Projekt Casanova: Jak voní Ramlice,Geisslers Hofcomoedianten,Theatrum Kuks,Kuks,N,N,barokní,,
-21.08.2025,Rezavá Anna aneb zač je toho kost!,Geisslers Hofcomoedianten,Theatrum Kuks,Kuks,N,N,barokní,90,Milá, malá, ale krásná radost z divadla! Představení, které se vejde prakticky do jednoho kufru a Lucie s Claudií si vše zvládají sehrát a technicky obstarat samy. Přitom je to vtipné, mírně neslušné a dostane se vám pochopitelně morálního ponaučení!
+21.08.2025,Rezavá Anna aneb zač je toho kost!,Geisslers Hofcomoedianten,Theatrum Kuks,Kuks,N,N,barokní,90,"Milá, malá, ale krásná radost z divadla! Představení, které se vejde prakticky do jednoho kufru a Lucie s Claudií si vše zvládají sehrát a technicky obstarat samy. Přitom je to vtipné, mírně neslušné a dostane se vám pochopitelně morálního ponaučení!"
 21.08.2025,Casanova,Spolek Jedl,Theatrum Kuks,Kuks,N,N,činohra,,
 22.08.2025,Pelech,TMEL,Theatrum Kuks,Kuks,N,N,alternativní,,
 22.08.2025,Dvě komedie v komedii,Geisslers Hofcomoedianten,Theatrum Kuks,Kuks,N,N,barokní,,
@@ -153,3 +153,4 @@ Datum,Nazev,Soubor,Misto,Mesto,Hostovacka,StazenoZR,Zanry,Hodnoceni,Komentar
 17.12.2025,Mnoho povyku pro nic,Národní divadlo,Stavovské divadlo,Praha,N,N,činohra,,
 
 19.12.2025,Farářův konec,Národní divadlo,Národní divadlo,Praha,N,N,činohra,,
+
