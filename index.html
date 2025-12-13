@@ -90,12 +90,14 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 6px;
         }
+
         /* pro dlouhé hodnoty (měsíc a datum rozsah) – aby karta nezvětšovala výšku */
-.stats-number--compact {
-  font-size: 1.85rem;
-  line-height: 1.05;
-  letter-spacing: 0.2px;
-}
+        .stats-number--compact {
+          font-size: 1.85rem;
+          line-height: 1.05;
+          letter-spacing: 0.2px;
+        }
+
         .stats-label {
             position: relative;
             font-size: 0.78rem;
@@ -444,6 +446,50 @@ function getCity(show) {
 
 let processedData = [];
 
+// === Canonical rating/comment per TITLE+THEATRE (Variant A) ===
+let canonicalByKey = new Map();
+
+function normKeyPart_(s) {
+  return String(s || '')
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, ' ')
+    .replace(/[“”„"]/g, '"');
+}
+
+function keyOf_(d) {
+  // klíč = název představení + soubor
+  return `${normKeyPart_(d.title)}|||${normKeyPart_(d.theatre)}`;
+}
+
+function rebuildCanonicalMap_() {
+  // Kanonický = nejnovější záznam s ratingem / komentářem
+  canonicalByKey = new Map();
+
+  const sorted = [...processedData].sort((a, b) => a.date - b.date);
+
+  for (const d of sorted) {
+    const k = keyOf_(d);
+    const prev = canonicalByKey.get(k) || {};
+
+    const hasRating = d.rating !== null && d.rating !== undefined && !Number.isNaN(d.rating);
+    const hasComment = d.comment && d.comment.trim().length > 0;
+
+    const rating = hasRating ? d.rating : prev.rating;
+    const comment = hasComment ? d.comment : prev.comment;
+
+    canonicalByKey.set(k, {
+      rating: (rating ?? null),
+      comment: (comment ?? ''),
+      sourceDate: d.date
+    });
+  }
+}
+
+function getCanonical_(row) {
+  return canonicalByKey.get(keyOf_(row)) || { rating: null, comment: '' };
+}
+
 async function initData() {
     await loadShows();
 
@@ -474,6 +520,7 @@ async function initData() {
         };
     });
 
+    rebuildCanonicalMap_();   // <-- IMPORTANT
     populateSelects();
     updateDashboard();
 }
@@ -516,10 +563,11 @@ function updateStats(data) {
     document.getElementById('statTheatres').innerText = new Set(data.map(d=>d.theatre)).size;
     document.getElementById('statCities').innerText = new Set(data.map(d=>d.city)).size;
 
-    // AVG rating (only filled)
-    const ratings = data
-        .map(d => d.rating)
-        .filter(v => v !== null && v !== undefined && !Number.isNaN(v));
+    // AVG rating (Variant A): jen 1× na titul (title+theatre), ignorovat null
+    const uniqKeys = [...new Set(data.map(d => keyOf_(d)))];
+    const ratings = uniqKeys
+      .map(k => (canonicalByKey.get(k)?.rating ?? null))
+      .filter(v => v !== null && v !== undefined && !Number.isNaN(v));
 
     const avgEl = document.getElementById('statAvg');
     const avgSub = document.getElementById('statAvgSub');
@@ -532,7 +580,7 @@ function updateStats(data) {
         if (avgSub) avgSub.textContent = `${ratings.length} hodnocení`;
     }
 
-    // Nejsilnější měsíc (month + count)
+    // Nejsilnější měsíc (month + count) – pořád z návštěv (ne unikátních)
     const monthCounts = new Array(12).fill(0);
     data.forEach(d => monthCounts[d.monthIdx]++);
     let bestMonthIdx = -1, bestMonthVal = 0;
@@ -548,7 +596,7 @@ function updateStats(data) {
         if (mSub) mSub.textContent = "";
     }
 
-    // Busiest week (Mon–Sun)
+    // Busiest week (Mon–Sun) – z návštěv
     const startOfWeekMonday = (dt) => {
         const d = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate());
         const day = (d.getDay() + 6) % 7;
@@ -571,22 +619,18 @@ function updateStats(data) {
 
     const weekEdgeEl = document.getElementById('statWeekEdge');
     const weekEdgeSub = document.getElementById('statWeekEdgeSub');
-    const busiestWeekText = document.getElementById('busiestWeekText');
 
     const fmt = (d) => String(d.getDate()).padStart(2,'0') + "." + String(d.getMonth()+1).padStart(2,'0') + "." + d.getFullYear();
 
     if (!bestK) {
         if (weekEdgeEl) weekEdgeEl.innerText = "—";
         if (weekEdgeSub) weekEdgeSub.textContent = "";
-        if (busiestWeekText) busiestWeekText.textContent = "—";
     } else {
         const monday = new Date(bestK);
         const sunday = new Date(monday); sunday.setDate(sunday.getDate() + 6);
 
         if (weekEdgeEl) weekEdgeEl.innerText = `${fmt(monday)}–${fmt(sunday)}`;
         if (weekEdgeSub) weekEdgeSub.textContent = `${bestV} představení`;
-
-        if (busiestWeekText) busiestWeekText.textContent = `${fmt(monday)} – ${fmt(sunday)} • ${bestV} představení`;
     }
 }
 
@@ -599,12 +643,12 @@ function renderCharts(data) {
         return acc;
     };
 
-    // 1) Monthly activity
+    // 1) Monthly activity (z návštěv)
     const monthly = new Array(12).fill(0);
     data.forEach(d => monthly[d.monthIdx]++);
     createOrUpdateChart('chartMonthly', 'line', months, monthly, '#06b6d4', { fill: true });
 
-    // 2) Location
+    // 2) Location (z návštěv)
     const cityRaw = countBy(d => d.city);
     const prahaVal = cityRaw["Praha"] || 0;
     delete cityRaw["Praha"];
@@ -614,7 +658,7 @@ function renderCharts(data) {
     const locColors = ['#06b6d4', '#f59e0b', '#f43f5e', '#8b5cf6', '#10b981', '#ff8c00'];
     createOrUpdateChart('chartLocation', 'bar', locLabels, locData, locColors);
 
-    // 3) Top 10 theatres
+    // 3) Top 10 theatres (z návštěv)
     const theatreRaw = Object.entries(countBy(d=>d.theatre))
         .sort((a,b)=>b[1]-a[1])
         .slice(0,10);
@@ -625,7 +669,7 @@ function renderCharts(data) {
         { indexAxis: 'y' }
     );
 
-    // 4) Top 10 repeated titles
+    // 4) Top 10 repeated titles (z návštěv)
     const titleCounts = countBy(d=>d.title);
     const repeatsRaw = Object.entries(titleCounts)
         .filter(([,v]) => v > 1)
@@ -639,9 +683,10 @@ function renderCharts(data) {
         { indexAxis: 'y' }
     );
 
-    // 5) Rating distribution: 0,10,20,...100 (11 bins), ignore nulls
-    const ratings = data
-        .map(d => d.rating)
+    // 5) Rating distribution (Variant A): jen 1× na titul, ignorovat null
+    const uniqKeysR = [...new Set(data.map(d => keyOf_(d)))];
+    const ratings = uniqKeysR
+        .map(k => (canonicalByKey.get(k)?.rating ?? null))
         .filter(v => v !== null && v !== undefined && !Number.isNaN(v));
 
     const bins = new Array(11).fill(0); // 0..10 => 0..100
@@ -727,11 +772,23 @@ function renderTable(data) {
             ? `<span class="badge badge-city ms-2">${row.city}</span>`
             : '';
 
-        const ratingText = (row.rating === null || row.rating === undefined || Number.isNaN(row.rating))
-            ? `<span class="opacity-50">—</span>`
-            : `<span class="text-white fw-bold">${Math.round(row.rating)}&nbsp;%</span>`;
+        const canon = getCanonical_(row);
 
-        const hasComment = row.comment && row.comment.trim().length > 0;
+        // Zobrazení ratingu: pokud řádek nemá rating, použij kanonický
+        const displayRating = (row.rating !== null && row.rating !== undefined && !Number.isNaN(row.rating))
+            ? row.rating
+            : canon.rating;
+
+        const ratingText = (displayRating === null || displayRating === undefined || Number.isNaN(displayRating))
+            ? `<span class="opacity-50">—</span>`
+            : `<span class="text-white fw-bold">${Math.round(displayRating)}&nbsp;%</span>`;
+
+        // Zobrazení komentáře: pokud řádek nemá komentář, použij kanonický
+        const displayComment = (row.comment && row.comment.trim().length > 0)
+            ? row.comment
+            : (canon.comment || '');
+
+        const hasComment = displayComment.trim().length > 0;
         const commentBtn = hasComment
             ? `<button class="btn btn-sm btn-outline-warning" onclick="openCommentModal(${row.__idx})">Komentář</button>`
             : `<button class="btn btn-sm btn-outline-secondary" disabled>—</button>`;
@@ -763,6 +820,16 @@ function openCommentModal(idx) {
     const row = processedData.find(d => d.__idx === idx);
     if (!row) return;
 
+    const canon = getCanonical_(row);
+
+    const displayRating = (row.rating !== null && row.rating !== undefined && !Number.isNaN(row.rating))
+      ? row.rating
+      : canon.rating;
+
+    const displayComment = (row.comment && row.comment.trim().length > 0)
+      ? row.comment
+      : (canon.comment || '');
+
     const titleEl = document.getElementById('commentModalTitle');
     const bodyEl = document.getElementById('commentModalBody');
     const metaEl = document.getElementById('commentModalMeta');
@@ -771,14 +838,14 @@ function openCommentModal(idx) {
     titleEl.textContent = row.title || 'Komentář';
     metaEl.textContent = `${row.theatre || ''} • ${row.place || ''} • ${row.rawDate || ''}`.replace(/\s+•\s+•/g,' •').trim();
 
-    if (row.rating !== null && row.rating !== undefined && !Number.isNaN(row.rating)) {
+    if (displayRating !== null && displayRating !== undefined && !Number.isNaN(displayRating)) {
         ratingEl.style.display = '';
-        ratingEl.textContent = `${Math.round(row.rating)} %`;
+        ratingEl.textContent = `${Math.round(displayRating)} %`;
     } else {
         ratingEl.style.display = 'none';
     }
 
-    bodyEl.textContent = (row.comment && row.comment.trim()) ? row.comment.trim() : '—';
+    bodyEl.textContent = (displayComment && displayComment.trim()) ? displayComment.trim() : '—';
 
     const modalEl = document.getElementById('commentModal');
     const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
