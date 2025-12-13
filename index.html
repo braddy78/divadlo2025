@@ -90,14 +90,12 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 6px;
         }
-
         /* pro dlouhé hodnoty (měsíc a datum rozsah) – aby karta nezvětšovala výšku */
         .stats-number--compact {
           font-size: 1.85rem;
           line-height: 1.05;
           letter-spacing: 0.2px;
         }
-
         .stats-label {
             position: relative;
             font-size: 0.78rem;
@@ -290,7 +288,13 @@
         </div>
         <div class="col-lg-4">
             <div class="chart-card">
-                <h5 class="chart-title">📍 Geografie: Praha vs. Regiony</h5>
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h5 class="chart-title mb-0">📍 Geografie: Praha vs. Regiony</h5>
+                    <div class="form-check form-switch m-0">
+                        <input class="form-check-input" type="checkbox" role="switch" id="toggleNoPrague">
+                        <label class="form-check-label small text-white-50" for="toggleNoPrague">Bez Prahy</label>
+                    </div>
+                </div>
                 <div style="height: 250px;"><canvas id="chartLocation"></canvas></div>
             </div>
         </div>
@@ -395,6 +399,9 @@ Chart.defaults.borderColor = '#27272a';
 const months = ["Leden","Únor","Březen","Duben","Květen","Červen","Červenec","Srpen","Září","Říjen","Listopad","Prosinec"];
 
 let filters = { title: "", theatre: "", city: "", genre: "", month: "" };
+
+// pro správné klikání v geo grafu (NEpoužíváme label)
+let locationKeys = [];
 
 async function loadShows() {
     const url = new URL('data/shows.json', window.location.href).toString();
@@ -520,7 +527,7 @@ async function initData() {
         };
     });
 
-    rebuildCanonicalMap_();   // <-- IMPORTANT
+    rebuildCanonicalMap_();
     populateSelects();
     updateDashboard();
 }
@@ -580,7 +587,7 @@ function updateStats(data) {
         if (avgSub) avgSub.textContent = `${ratings.length} hodnocení`;
     }
 
-    // Nejsilnější měsíc (month + count) – pořád z návštěv (ne unikátních)
+    // Nejsilnější měsíc (z návštěv)
     const monthCounts = new Array(12).fill(0);
     data.forEach(d => monthCounts[d.monthIdx]++);
     let bestMonthIdx = -1, bestMonthVal = 0;
@@ -643,22 +650,35 @@ function renderCharts(data) {
         return acc;
     };
 
-    // 1) Monthly activity (z návštěv)
+    // 1) Monthly activity
     const monthly = new Array(12).fill(0);
     data.forEach(d => monthly[d.monthIdx]++);
     createOrUpdateChart('chartMonthly', 'line', months, monthly, '#06b6d4', { fill: true });
 
-    // 2) Location (z návštěv)
-    const cityRaw = countBy(d => d.city);
-    const prahaVal = cityRaw["Praha"] || 0;
-    delete cityRaw["Praha"];
-    const sortedCities = Object.entries(cityRaw).sort((a,b)=>b[1]-a[1]);
-    const locLabels = ["Praha (Vše)", ...sortedCities.map(x=>x[0])];
-    const locData = [prahaVal, ...sortedCities.map(x=>x[1])];
-    const locColors = ['#06b6d4', '#f59e0b', '#f43f5e', '#8b5cf6', '#10b981', '#ff8c00'];
-    createOrUpdateChart('chartLocation', 'bar', locLabels, locData, locColors);
+    // 2) Location (Praha toggle + správné mapování kliků)
+    const noPrague = !!document.getElementById('toggleNoPrague')?.checked;
 
-    // 3) Top 10 theatres (z návštěv)
+    const cityRaw = countBy(d => d.city);
+    if (noPrague) {
+        delete cityRaw["Praha"];
+    }
+
+    const entries = Object.entries(cityRaw).sort((a,b)=>b[1]-a[1]);
+
+    // keys = skutečné hodnoty do filtru
+    locationKeys = entries.map(([city]) => city);
+
+    // labels = to co zobrazíš v grafu
+    const locLabels = entries.map(([city]) => (city === "Praha" ? "Praha (Vše)" : city));
+    const locData = entries.map(([,count]) => count);
+
+    const locColors = ['#06b6d4', '#f59e0b', '#f43f5e', '#8b5cf6', '#10b981', '#ff8c00'];
+
+    createOrUpdateChart('chartLocation', 'bar', locLabels, locData, locColors, {
+        interaction: { mode: 'nearest', intersect: true }
+    });
+
+    // 3) Top 10 theatres
     const theatreRaw = Object.entries(countBy(d=>d.theatre))
         .sort((a,b)=>b[1]-a[1])
         .slice(0,10);
@@ -669,7 +689,7 @@ function renderCharts(data) {
         { indexAxis: 'y' }
     );
 
-    // 4) Top 10 repeated titles (z návštěv)
+    // 4) Top 10 repeated titles
     const titleCounts = countBy(d=>d.title);
     const repeatsRaw = Object.entries(titleCounts)
         .filter(([,v]) => v > 1)
@@ -732,7 +752,7 @@ function createOrUpdateChart(id, type, labels, data, colors, extraOpts = {}) {
                     x: { grid: { display: false } },
                     y: { beginAtZero: true, grid: { color: '#27272a' } }
                 },
-                onClick: (e, el) => handleChartClick(el, id, labels),
+                onClick: (e, el) => handleChartClick(el, id),
                 ...extraOpts
             }
         });
@@ -740,19 +760,23 @@ function createOrUpdateChart(id, type, labels, data, colors, extraOpts = {}) {
 }
 
 /* --- Interakce grafů -> Filtry --- */
-function handleChartClick(elements, chartId, labels) {
+function handleChartClick(elements, chartId) {
     if (!elements.length) return;
     const idx = elements[0].index;
-    const label = labels[idx];
 
     if (chartId === 'chartMonthly') {
         document.getElementById('filterMonth').value = idx;
     } else if (chartId === 'chartTheatres') {
+        const label = charts[chartId].data.labels[idx];
         document.getElementById('filterTheatre').value = label;
     } else if (chartId === 'chartRepeats') {
+        const label = charts[chartId].data.labels[idx];
         document.getElementById('filterTitle').value = label === "—" ? "" : label;
     } else if (chartId === 'chartLocation') {
-        document.getElementById('filterCity').value = (label === "Praha (Vše)") ? "Praha" : label;
+        // ✅ správné mapování: vezmeme reálný klíč města podle indexu sloupku
+        const city = locationKeys[idx];
+        if (!city) return;
+        document.getElementById('filterCity').value = city;
     }
 
     applyFilters();
@@ -774,7 +798,6 @@ function renderTable(data) {
 
         const canon = getCanonical_(row);
 
-        // Zobrazení ratingu: pokud řádek nemá rating, použij kanonický
         const displayRating = (row.rating !== null && row.rating !== undefined && !Number.isNaN(row.rating))
             ? row.rating
             : canon.rating;
@@ -783,7 +806,6 @@ function renderTable(data) {
             ? `<span class="opacity-50">—</span>`
             : `<span class="text-white fw-bold">${Math.round(displayRating)}&nbsp;%</span>`;
 
-        // Zobrazení komentáře: pokud řádek nemá komentář, použij kanonický
         const displayComment = (row.comment && row.comment.trim().length > 0)
             ? row.comment
             : (canon.comment || '');
@@ -880,6 +902,11 @@ function resetFilters() {
     if (id === 'filterTitle') {
          document.getElementById(id).addEventListener('input', applyFilters);
     }
+});
+
+// Toggle "Bez Prahy" → přerenderuje grafy + tabulku podle aktuálních filtrů
+document.getElementById('toggleNoPrague')?.addEventListener('change', () => {
+    updateDashboard();
 });
 
 // Start
