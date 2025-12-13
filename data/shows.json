@@ -1,0 +1,2149 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2025-12-13T08:17:53.083635Z",
+  "source": "data/shows.csv",
+  "shows": [
+    {
+      "date": "03.01.2025",
+      "title": "Obraz",
+      "theatre": "Komorní scéna Aréna",
+      "place": "Komorní scéna Aréna",
+      "city": "Ostrava",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "04.01.2025",
+      "title": "Pravidla bincárny",
+      "theatre": "Husa na provázku",
+      "place": "Husa na provázku",
+      "city": "Brno",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "07.01.2025",
+      "title": "Celou noc venku",
+      "theatre": "Divadlo v Celetné",
+      "place": "Celetné",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "08.01.2025",
+      "title": "Naši furianti",
+      "theatre": "Národní divadlo",
+      "place": "Národní divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "09.01.2025",
+      "title": "Koza aneb Kdo je Sylvie?",
+      "theatre": "Divadlo Bez zábradlí",
+      "place": "Divadlo Bez zábradlí",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "11.01.2025",
+      "title": "Paní Bovaryová",
+      "theatre": "Národní divadlo",
+      "place": "Stavovské divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "18.01.2025",
+      "title": "Trójanky",
+      "theatre": "Švandovo divadlo",
+      "place": "Švandovo divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "19.01.2025",
+      "title": "Frankenstein",
+      "theatre": "Městská divadla pražská",
+      "place": "Divadlo Komedie",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "20.01.2025",
+      "title": "Karameloun",
+      "theatre": "Ductus Deferens",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "22.01.2025",
+      "title": "Návrat krále",
+      "theatre": "Švandovo divadlo",
+      "place": "Švandovo divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "23.01.2025",
+      "title": "Dánská dívka",
+      "theatre": "Divadlo Na Fidlovačce",
+      "place": "Divadlo Na Fidlovačce",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "26.01.2025",
+      "title": "Mefisto",
+      "theatre": "Národní divadlo",
+      "place": "Státní opera",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "27.01.2025",
+      "title": "Norway Today",
+      "theatre": "Divadlo DISK",
+      "place": "Studio Řetízek",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "27.01.2025",
+      "title": "Bible 2",
+      "theatre": "Divadlo NoD",
+      "place": "Divadlo NoD",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "28.01.2025",
+      "title": "Lhářky",
+      "theatre": "Divadlo Letí",
+      "place": "Vila Štvanice",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "29.01.2025",
+      "title": "Ježek",
+      "theatre": "Městská divadla pražská",
+      "place": "Divadlo ABC",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "muzikál"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "30.01.2025",
+      "title": "Privatizace",
+      "theatre": "Národní divadlo",
+      "place": "Nová scéna",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "31.01.2025",
+      "title": "Peer Gynt",
+      "theatre": "Divadlo DISK",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "01.02.2025",
+      "title": "Chytte Chaplina!",
+      "theatre": "Východočeské divadlo Pardubice",
+      "place": "Městské divadlo",
+      "city": "Pardubice",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "04.02.2025",
+      "title": "Na smrt",
+      "theatre": "Divadlo D21",
+      "place": "Divadlo D21",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "07.02.2025",
+      "title": "Podoba věcí",
+      "theatre": "Klicperovo divadlo",
+      "place": "Divadlo v Dlouhé (host)",
+      "city": "",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "11.02.2025",
+      "title": "Yvonna princezna Burgundánská",
+      "theatre": "Festival NADAMU",
+      "place": "Studio Řetízek",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "11.02.2025",
+      "title": "Karameloun",
+      "theatre": "Ductus Deferens",
+      "place": "Divadlo DISK (NADAMU)",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "12.02.2025",
+      "title": "Věštkyně",
+      "theatre": "Divadlo Na Fidlovačce",
+      "place": "Divadlo Na Fidlovačce",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "13.02.2025",
+      "title": "Iluze",
+      "theatre": "Festival NADAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "14.02.2025",
+      "title": "Noc Tribádek",
+      "theatre": "Festival NADAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "16.02.2025",
+      "title": "Jezinky a bezinky",
+      "theatre": "Studio DVA",
+      "place": "Studio DVA",
+      "city": "",
+      "host": false,
+      "removed": true,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": "Zrušeno"
+    },
+    {
+      "date": "19.02.2025",
+      "title": "Tulák po hvězdách",
+      "theatre": "Divadelní spolek Šprajc",
+      "place": "Divadlo v Celetné",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "20.02.2025",
+      "title": "Ženy držte huby!",
+      "theatre": "Spolek JEDL",
+      "place": "Divadlo Rokoko",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "23.02.2025",
+      "title": "Váňa",
+      "theatre": "Didi.art",
+      "place": "Divadlo v Řeznické",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "24.02.2025",
+      "title": "Návrat krále",
+      "theatre": "Švandovo divadlo",
+      "place": "Švandovo divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "26.02.2025",
+      "title": "Národní třída",
+      "theatre": "Neurčeno",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "28.02.2025",
+      "title": "Doba datová",
+      "theatre": "Divadlo Degustace",
+      "place": "Studio Citadela",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "amatérské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "01.03.2025",
+      "title": "Paní Dallowayová",
+      "theatre": "Divadlo Na zábradlí",
+      "place": "Divadlo Na zábradlí",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "02.03.2025",
+      "title": "Zadním vchodem na Hrad",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "03.03.2025",
+      "title": "Peer Gynt",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "04.03.2025",
+      "title": "Návrat Krále Šumavy",
+      "theatre": "Jihočeské divadlo",
+      "place": "Jihočeské divadlo",
+      "city": "České Budějovice",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "06.03.2025",
+      "title": "Slučitelné díly",
+      "theatre": "Klicperovo divadlo",
+      "place": "Studio Beseda",
+      "city": "Hradec Králové",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "09.03.2025",
+      "title": "Historky z Tinderu 2",
+      "theatre": "LiStOVáNí",
+      "place": "Divadlo Minor",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "12.03.2025",
+      "title": "27 litrů umělý krve",
+      "theatre": "Divadlo NoD",
+      "place": "Divadlo NoD",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "13.03.2025",
+      "title": "Manhattan Project",
+      "theatre": "Jihočeské divadlo",
+      "place": "Jihočeské divadlo",
+      "city": "České Budějovice",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "14.03.2025",
+      "title": "Naši fabulanti",
+      "theatre": "Ductus Deferens",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "15.03.2025",
+      "title": "Vražda v ulici Lourcine",
+      "theatre": "DAMU",
+      "place": "Studio Řetízek",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "16.03.2025",
+      "title": "GUČI GUČI GUČI",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "17.03.2025",
+      "title": "Noc tribádek",
+      "theatre": "HaDivadlo",
+      "place": "Divadlo ARCHA+ (host)",
+      "city": "",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "20.03.2025",
+      "title": "Pygmalion",
+      "theatre": "Divadlo pod Palmovkou",
+      "place": "Divadlo pod Palmovkou",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "22.03.2025",
+      "title": "Podivuhodný případ BB",
+      "theatre": "MDP",
+      "place": "Rokoko",
+      "city": "",
+      "host": false,
+      "removed": true,
+      "genres": [
+        "muzikál"
+      ],
+      "rating": null,
+      "comment": "Zrušeno"
+    },
+    {
+      "date": "23.03.2025",
+      "title": "LK3P 2: Zelenavý ptáček",
+      "theatre": "Divadlo VILA Štvanice",
+      "place": "Divadlo VILA Štvanice",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "barokní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "24.03.2025",
+      "title": "Utěšitelka",
+      "theatre": "Spolek JEDL",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "25.03.2025",
+      "title": "Fakani",
+      "theatre": "A studio Rubín",
+      "place": "A studio Rubín",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "29.03.2025",
+      "title": "Krakatit",
+      "theatre": "Vršovické divadlo MANA",
+      "place": "Vršovické divadlo MANA",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "29.03.2025",
+      "title": "Noc Tribádek",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "30.03.2025",
+      "title": "Z pohlavního života našeho lidu",
+      "theatre": "Husa na provázku",
+      "place": "Divadlo ARCHA+ (host)",
+      "city": "",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "31.03.2025",
+      "title": "Jednou nám za to děcka poděkujou",
+      "theatre": "Husa na provázku",
+      "place": "Divadlo ARCHA+ (host)",
+      "city": "",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "02.04.2025",
+      "title": "Atomová kočička",
+      "theatre": "Východočeské divadlo Pardubice",
+      "place": "Divadlo pod Palmovkou (host)",
+      "city": "",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "06.04.2025",
+      "title": "Na tom nezáleží",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "07.04.2025",
+      "title": "Příliš krátká telomera",
+      "theatre": "Divadlo pod Palmovkou",
+      "place": "Studio PalmOFF",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "08.04.2025",
+      "title": "Pěna dní",
+      "theatre": "Divadlo D21",
+      "place": "Divadlo D21",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "10.04.2025",
+      "title": "O polednách",
+      "theatre": "Depresivní děti touží po penězích",
+      "place": "Venuše ve Švehlovce",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "13.04.2025",
+      "title": "Kurt a Sid",
+      "theatre": "Malostranská beseda",
+      "place": "Malostranská beseda",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "14.04.2025",
+      "title": "VOJCEK jednorozměrný člověk",
+      "theatre": "Lachende Bestien",
+      "place": "Divadlo X10",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "17.04.2025",
+      "title": "Hamlet",
+      "theatre": "Jihočeské divadlo",
+      "place": "Na Půdě",
+      "city": "České Budějovice",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "22.04.2025",
+      "title": "Podivuhodný případ Benjamina Buttona",
+      "theatre": "Městská divadla pražská",
+      "place": "Divadlo Rokoko",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "muzikál"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "11.05.2025",
+      "title": "Tvář v ohni",
+      "theatre": "Divadlo Na zábradlí",
+      "place": "Divadlo Na zábradlí",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "12.05.2025",
+      "title": "Jídlo",
+      "theatre": "Divadlo Debut",
+      "place": "Divadlo Debut",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "15.05.2025",
+      "title": "Divoká kachna",
+      "theatre": "Švandovo divadlo",
+      "place": "Švandovo divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "15.05.2025",
+      "title": "Smiley",
+      "theatre": "Studio DVA divadlo",
+      "place": "Studio DVA (Malá scéna)",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "19.05.2025",
+      "title": "Vernisáž",
+      "theatre": "Divadlo D21",
+      "place": "Divadlo D21",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "23.05.2025",
+      "title": "Princess of the mlejn",
+      "theatre": "Ductus Deferens",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "29.05.2025",
+      "title": "Ropa",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "01.06.2025",
+      "title": "Naši fabulanti",
+      "theatre": "Ductus Deferens",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "05.06.2025",
+      "title": "Peer Gynt",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "07.06.2025",
+      "title": "Komuna",
+      "theatre": "Činoherní klub",
+      "place": "Činoherní klub",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "09.06.2025",
+      "title": "R.U.R.",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "10.06.2025",
+      "title": "How to be HAPPY",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "11.06.2025",
+      "title": "27 litrů umělý krve",
+      "theatre": "NoD",
+      "place": "NoD",
+      "city": "",
+      "host": false,
+      "removed": true,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": "Zrušeno"
+    },
+    {
+      "date": "12.06.2025",
+      "title": "OnlyFans",
+      "theatre": "Městská divadla pražská",
+      "place": "Divadlo Komedie",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "15.06.2025",
+      "title": "Heda Gablerová - naostro",
+      "theatre": "Činoherní klub",
+      "place": "Činoherní klub",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "18.06.2025",
+      "title": "Návrat krále",
+      "theatre": "Švandovo divadlo",
+      "place": "Švandovo divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "19.06.2025",
+      "title": "Babyboom",
+      "theatre": "Činoherní klub",
+      "place": "Činoherní klub",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "21.06.2025",
+      "title": "Nebesa",
+      "theatre": "Městská divadla pražská",
+      "place": "Divadlo ABC",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "22.06.2025",
+      "title": "Projekt Casanova: Jak voní Ramlice",
+      "theatre": "Geisslers Hofcomoedianten",
+      "place": "Zámek Valeč",
+      "city": "Valeč",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "barokní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "23.06.2025",
+      "title": "Karameloun",
+      "theatre": "Ductus Deferens",
+      "place": "Lodivadlo",
+      "city": "Hradec Králové",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "23.06.2025",
+      "title": "Slučitelné díly",
+      "theatre": "Klicperovo divadlo",
+      "place": "Letní kino Širák",
+      "city": "Hradec Králové",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "25.06.2025",
+      "title": "Ema",
+      "theatre": "Peškovka",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "27.06.2025",
+      "title": "Pozdě příchozí",
+      "theatre": "Divadlo Petra Bezruče",
+      "place": "Divadlo Archa (host)",
+      "city": "",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "28.06.2025",
+      "title": "Krysař",
+      "theatre": "Divadlo Petra Bezruče",
+      "place": "Divadlo Archa (host)",
+      "city": "",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "08.07.2025",
+      "title": "Othello",
+      "theatre": "Shakespearovské slavnosti",
+      "place": "Hrad",
+      "city": "",
+      "host": false,
+      "removed": true,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": "Zrušeno"
+    },
+    {
+      "date": "14.07.2025",
+      "title": "Amatéři",
+      "theatre": "Studio DVA divadlo",
+      "place": "Letní scéna Výstaviště",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "19.07.2025",
+      "title": "Herkules",
+      "theatre": "Jihočeské divadlo",
+      "place": "Otáčivé hlediště",
+      "city": "Český Krumlov",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "24.07.2025",
+      "title": "Drým Džurny",
+      "theatre": "Ductus Deferens",
+      "place": "Usedlost Cibulka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "12.08.2025",
+      "title": "Buly divadlo živě",
+      "theatre": "Buly divadlo",
+      "place": "Zámek Brandýs",
+      "city": "Brandýs n/L",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "20.08.2025",
+      "title": "Projekt Casanova: Jak voní Ramlice",
+      "theatre": "Geisslers Hofcomoedianten",
+      "place": "Theatrum Kuks",
+      "city": "Kuks",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "barokní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "21.08.2025",
+      "title": "Rezavá Anna",
+      "theatre": "Geisslers Hofcomoedianten",
+      "place": "Theatrum Kuks",
+      "city": "Kuks",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "barokní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "21.08.2025",
+      "title": "Casanova",
+      "theatre": "Spolek Jedl",
+      "place": "Theatrum Kuks",
+      "city": "Kuks",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "22.08.2025",
+      "title": "Pelech",
+      "theatre": "TMEL",
+      "place": "Theatrum Kuks",
+      "city": "Kuks",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "22.08.2025",
+      "title": "Dvě komedie v komedii",
+      "theatre": "Geisslers Hofcomoedianten",
+      "place": "Theatrum Kuks",
+      "city": "Kuks",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "barokní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "23.08.2025",
+      "title": "Puld a pudr",
+      "theatre": "Geisslers Hofcomoedianten",
+      "place": "Theatrum Kuks",
+      "city": "Kuks",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "barokní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "25.08.2025",
+      "title": "Život Galileiho",
+      "theatre": "Divadlo X10",
+      "place": "Divadlo X10",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "26.08.2025",
+      "title": "Dům v jabloních",
+      "theatre": "Pomezí",
+      "place": "Winternitzova vila",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "imersivní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "31.08.2025",
+      "title": "Herkules",
+      "theatre": "Jihočeské divadlo",
+      "place": "Otáčivé hlediště",
+      "city": "Český Krumlov",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "31.08.2025",
+      "title": "Dekameron",
+      "theatre": "Jihočeské divadlo",
+      "place": "Otáčivé hlediště",
+      "city": "Český Krumlov",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "01.09.2025",
+      "title": "Dvojí zákon",
+      "theatre": "Krajinou přílivu",
+      "place": "Nová libeňská synagoga",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "07.09.2025",
+      "title": "Huberte!",
+      "theatre": "Geisslers Hofcomoedianten",
+      "place": "Chvalská tvrz",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "barokní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "09.09.2025",
+      "title": "Tragická historie Jana Fausta",
+      "theatre": "Divadlo Kámen",
+      "place": "Divadlo Kámen",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "22.09.2025",
+      "title": "Emil čili O Háchovi",
+      "theatre": "Divadlo D21",
+      "place": "Divadlo D21",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "25.09.2025",
+      "title": "Fušeři",
+      "theatre": "Divadlo Na zábradlí",
+      "place": "Divadlo Na zábradlí",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "27.09.2025",
+      "title": "Vyhubyt",
+      "theatre": "Klicperovo divadlo",
+      "place": "Studio Beseda",
+      "city": "Hradec Králové",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "29.09.2025",
+      "title": "Krkavci",
+      "theatre": "Dejvické divadlo",
+      "place": "Dejvické divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "01.10.2025",
+      "title": "Ošklivec",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "02.10.2025",
+      "title": "Princess of the mlejn",
+      "theatre": "Ductus Deferens",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "03.10.2025",
+      "title": "Krysy",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "06.10.2025",
+      "title": "Zločin a trest",
+      "theatre": "Divadlo D21",
+      "place": "Divadlo D21",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "10.10.2025",
+      "title": "Bůh masakru",
+      "theatre": "Komorní scéna Aréna",
+      "place": "Klicperovo divadlo (host)",
+      "city": "Hradec Králové",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "11.10.2025",
+      "title": "Čekání na Václava",
+      "theatre": "Klicperovo divadlo",
+      "place": "Hlavní scéna",
+      "city": "Hradec Králové",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "11.10.2025",
+      "title": "Prašina 2",
+      "theatre": "Klicperovo divadlo",
+      "place": "Hlavní scéna",
+      "city": "Hradec Králové",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "12.10.2025",
+      "title": "Triomphez",
+      "theatre": "Veselé Chvíle",
+      "place": "Zámek Troja",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "muzikál"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "13.10.2025",
+      "title": "Wandervogel",
+      "theatre": "Alfred ve dvoře",
+      "place": "Alfred ve dvoře",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "15.10.2025",
+      "title": "Naši Fabulanti",
+      "theatre": "Ductus Deferens",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "18.10.2025",
+      "title": "Farinelli a král",
+      "theatre": "Městská divadla pražská",
+      "place": "Divadlo Rokoko",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "22.10.2025",
+      "title": "Noční můry s čápem marabu",
+      "theatre": "MeetFactory",
+      "place": "MeetFactory",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "23.10.2025",
+      "title": "Té tmě utíkám ve Smečkách",
+      "theatre": "Činoherní klub",
+      "place": "Site specific",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "site specific"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "26.10.2025",
+      "title": "Arabská noc",
+      "theatre": "Divadlo Na zábradlí",
+      "place": "Divadlo Na zábradlí",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "27.10.2025",
+      "title": "Kdo je tady praporčík?",
+      "theatre": "Ductus Deferens",
+      "place": "Divadlo v Celetné",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "29.10.2025",
+      "title": "Jezinky a bezinky",
+      "theatre": "Studio DVA divadlo",
+      "place": "Studio DVA divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "30.10.2025",
+      "title": "Miluj mrtvého svého",
+      "theatre": "Divadlo Debut",
+      "place": "Divadlo Debut",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "31.10.2025",
+      "title": "Hněv",
+      "theatre": "Geisslers Hofcomoedianten",
+      "place": "Divadlo VILA Štvanice",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "31.10.2025",
+      "title": "Pískoviště",
+      "theatre": "OLDstars",
+      "place": "Dejvické divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "01.11.2025",
+      "title": "Fernando Krapp mi napsal dopis",
+      "theatre": "Činoherní klub",
+      "place": "Činoherní klub",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "03.11.2025",
+      "title": "Tartuffláž",
+      "theatre": "Divadlo D21",
+      "place": "Divadlo D21",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "05.11.2025",
+      "title": "Krásný nový den",
+      "theatre": "Pomezí",
+      "place": "Za Poříčskou bránou",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "imersivní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "06.11.2025",
+      "title": "Monstrum",
+      "theatre": "Jihočeské divadlo",
+      "place": "Na Půdě",
+      "city": "České Budějovice",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "10.11.2025",
+      "title": "Smrdíš ty!",
+      "theatre": "Ductus Deferens",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "12.11.2025",
+      "title": "Faust",
+      "theatre": "Horácké divadlo Jihlava",
+      "place": "Horácké divadlo",
+      "city": "Jihlava",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "14.11.2025",
+      "title": "Potopa",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "18.11.2025",
+      "title": "Teoréma",
+      "theatre": "Divadlo v Dlouhé",
+      "place": "Divadlo v Dlouhé",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "19.11.2025",
+      "title": "MEIN GOTT!",
+      "theatre": "Divadlo D21",
+      "place": "Divadlo D21",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "24.11.2025",
+      "title": "Poprask na laguně",
+      "theatre": "Divadlo na Vinohradech",
+      "place": "Divadlo na Vinohradech",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "25.11.2025",
+      "title": "Nebezpečné známosti",
+      "theatre": "Divadlo F.X. Šaldy",
+      "place": "Divadlo F.X. Šaldy",
+      "city": "Liberec",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "26.11.2025",
+      "title": "Plechový bubínek",
+      "theatre": "Divadlo Na zábradlí",
+      "place": "Divadlo Na zábradlí",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "30.11.2025",
+      "title": "The Black Rider",
+      "theatre": "Městská divadla pražská",
+      "place": "Divadlo Komedie",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "muzikál"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "01.12.2025",
+      "title": "Ema",
+      "theatre": "Peškovka",
+      "place": "Peškovka",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "muzikál"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "04.12.2025",
+      "title": "27 litrů umělý krve",
+      "theatre": "Divadlo NoD",
+      "place": "Divadlo NoD",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "05.12.2025",
+      "title": "Když nám bylo míň",
+      "theatre": "MeetFactory",
+      "place": "MeetFactory",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "06.12.2025",
+      "title": "Kabaret Königgrätz",
+      "theatre": "Klicperovo divadlo",
+      "place": "Studio Beseda",
+      "city": "Hradec Králové",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "07.12.2025",
+      "title": "O polednách",
+      "theatre": "Depresivní děti touží po penězích",
+      "place": "Venuše ve Švehlovce",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "08.12.2025",
+      "title": "Zlaté město",
+      "theatre": "Divadlo v Dlouhé",
+      "place": "Divadlo v Dlouhé",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "10.12.2025",
+      "title": "HEROES",
+      "theatre": "Divadlo Letí",
+      "place": "Vila Štvanice",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "13.12.2025",
+      "title": "Nana a Zabiják",
+      "theatre": "Městská divadla pražská",
+      "place": "Divadlo ABC",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "14.12.2025",
+      "title": "Oscar pro Emily",
+      "theatre": "Studio DVA divadlo",
+      "place": "Malá scéna Studio DVA",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "16.12.2025",
+      "title": "Betlém aneb Komedie o narození",
+      "theatre": "Divadlo D21",
+      "place": "Divadlo D21",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "17.12.2025",
+      "title": "Mnoho povyku pro nic",
+      "theatre": "Národní divadlo",
+      "place": "Stavovské divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "19.12.2025",
+      "title": "Farářův konec",
+      "theatre": "Národní divadlo",
+      "place": "Národní divadlo",
+      "city": "",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    }
+  ]
+}
