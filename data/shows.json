@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-13T12:17:57.446Z",
+  "generatedAt": "2025-12-13T12:19:07.099Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -1289,7 +1289,7 @@
         "barokní"
       ],
       "rating": 90,
-      "comment": "Milá"
+      "comment": "Milá, malá, ale krásná radost z divadla! Představení, které se vejde prakticky do jednoho kufru a Lucie s Claudií si vše zvládají sehrát a technicky obstarat samy. Přitom je to vtipné, mírně neslušné a dostane se vám pochopitelně morálního ponaučení!"
     },
     {
       "date": "21.08.2025",
