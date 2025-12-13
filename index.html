@@ -352,8 +352,35 @@ let rawData = [];
         const res = await fetch(url, { cache: 'no-store' });
         if (!res.ok) throw new Error(`Nepodařilo se načíst data (${res.status}) z ${url}`);
         const json = await res.json();
-        // Podporujeme oba formáty: {shows:[...]} nebo rovnou pole
-        shows = Array.isArray(json) ? json : (json.shows || []);
+
+        // Podporované formáty:
+        // 1) { shows: [ {date,title,theatre,place,city,genres,rating,comment,...} ] }
+        // 2) [ { ... } ]  (přímo pole)
+        // 3) { rawData: [ [date,title,theatre,place,city,genre], ... ] }  (legacy)
+        if (Array.isArray(json)) {
+            shows = json;
+            return;
+        }
+        if (Array.isArray(json?.shows)) {
+            shows = json.shows;
+            return;
+        }
+        if (Array.isArray(json?.rawData)) {
+            shows = json.rawData.map(r => ({
+                date: r[0],
+                title: r[1],
+                theatre: r[2],
+                place: r[3],
+                city: r[4] || '',
+                host: false,
+                removed: false,
+                genres: String(r[5] || '').split(/[;|,]/).map(x=>x.trim()).filter(Boolean),
+                rating: null,
+                comment: ''
+            }));
+            return;
+        }
+        shows = [];
     }
 
 
