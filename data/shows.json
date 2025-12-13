@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-13T14:40:51.653Z",
+  "generatedAt": "2025-12-13T14:54:11.600Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -1584,20 +1584,6 @@
       ],
       "rating": 70,
       "comment": "Viděno v Hradci Králové v rámci festivalu Čekání na Václava. Marek Cisovský z celé čtyřky za mě rozhodně nejlepší. Je možné že tomu větší scéna Klicperova divadla trochu uškodila na komorním vyznění. Nastudování v pražském Činoheráku mě bavilo o něco více."
-    },
-    {
-      "date": "11.10.2025",
-      "title": "Čekání na Václava",
-      "theatre": "Klicperovo divadlo",
-      "place": "Hlavní scéna",
-      "city": "Hradec Králové",
-      "host": false,
-      "removed": false,
-      "genres": [
-        "činohra"
-      ],
-      "rating": null,
-      "comment": ""
     },
     {
       "date": "11.10.2025",
