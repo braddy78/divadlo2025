@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-13T09:46:44.537Z",
+  "generatedAt": "2025-12-13T12:17:57.446Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -1279,7 +1279,7 @@
     },
     {
       "date": "21.08.2025",
-      "title": "Rezavá Anna",
+      "title": "Rezavá Anna aneb zač je toho kost!",
       "theatre": "Geisslers Hofcomoedianten",
       "place": "Theatrum Kuks",
       "city": "Kuks",
@@ -1288,8 +1288,8 @@
       "genres": [
         "barokní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Milá"
     },
     {
       "date": "21.08.2025",
@@ -2100,8 +2100,8 @@
       "genres": [
         "barokní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "I bez kontextu předchozích her jsem si neobvyklý muzikál užil. A to nejsem zrovna fanda do muzikálů. Ústřední dvojice je skvěle sehraná"
     },
     {
       "date": "16.12.2025",
