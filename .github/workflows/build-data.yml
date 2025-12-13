@@ -1,0 +1,39 @@
+name: Build shows.json
+
+on:
+  push:
+    paths:
+      - "data/shows.csv"
+      - "scripts/build-data.mjs"
+      - ".github/workflows/build-data.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build JSON
+        run: node scripts/build-data.mjs
+
+      - name: Commit generated JSON (if changed)
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/shows.json
+          git commit -m "chore: rebuild shows.json"
+          git push
