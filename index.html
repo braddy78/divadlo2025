@@ -90,6 +90,12 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 6px;
         }
+        /* pro dlouhé hodnoty (měsíc a datum rozsah) – aby karta nezvětšovala výšku */
+.stats-number--compact {
+  font-size: 1.85rem;
+  line-height: 1.05;
+  letter-spacing: 0.2px;
+}
         .stats-label {
             position: relative;
             font-size: 0.78rem;
@@ -217,7 +223,7 @@
     <div class="container">
         <h1 class="glitch-text">Braddyovic Divadelní Sezóna 2025</h1>
         <p class="lead text-muted mt-2" style="color: var(--accent-cyan) !important;">
-            Dramaturgický profil 2025: Audit odehraných titulů, souborů a regionálních výjezdů.
+            Dramaturgický profil 2025: Audit shlédnutých titulů, souborů a regionálních výjezdů.
         </p>
     </div>
 </div>
@@ -257,7 +263,7 @@
 
         <div class="col-6 col-md-4">
             <div class="stats-card">
-                <div class="stats-number" id="statBusyMonth">—</div>
+                <div class="stats-number stats-number--compact" id="statBusyMonth">—</div>
                 <div class="stats-label">📅 Nejsilnější měsíc</div>
                 <div class="stats-sub" id="statBusyMonthSub"></div>
             </div>
@@ -265,24 +271,9 @@
 
         <div class="col-6 col-md-4">
             <div class="stats-card">
-                <div class="stats-number" id="statWeekEdge">—</div>
+                <div class="stats-number stats-number--compact" id="statWeekEdge">—</div>
                 <div class="stats-label">🔥 Týden na hraně</div>
                 <div class="stats-sub" id="statWeekEdgeSub"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Busiest week banner (kept, but fed from same logic) -->
-    <div class="row mb-4">
-        <div class="col-12">
-            <div class="chart-card" style="padding: 14px 18px;">
-                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
-                    <div>
-                        <div class="text-white fw-bold">🔥 Nejnáročnější týden</div>
-                        <div class="text-muted small" id="busiestWeekText">—</div>
-                    </div>
-                    <div class="text-muted small">Měřeno počtem představení Po–Ne</div>
-                </div>
             </div>
         </div>
     </div>
