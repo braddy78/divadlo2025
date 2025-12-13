@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-13T09:15:54.052Z",
+  "generatedAt": "2025-12-13T09:46:44.537Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -14,7 +14,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -28,7 +28,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -42,8 +42,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Vůbec se hlavnímu hrdinovi nedivím. Mít takovou matku, takové \"milé\" kolegy, tak by mi taky ruplo v kouli. Josef Bánovec je dojemný a zároveň z něj jde strach."
     },
     {
       "date": "08.01.2025",
@@ -56,7 +56,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -70,7 +70,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -84,8 +84,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "To se Tomáši Loužnému fakt povedlo! Minimální, zajímavá scéna se zrcadly. Denisa trefila Emu myslím velmi přesně bez sklouzávání ke stereotypní naivní \"holce z vesnice\". Skvělý byl také Radúz Mácha. A zlatý hřeb je pak Petr Vančura a jeho \"moderátor\"."
     },
     {
       "date": "18.01.2025",
@@ -98,7 +98,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -112,8 +112,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Šel jsem na představení bez konkrétního očekávání. A musím říct že už mě dlouho nic tak úžasně příjemně nepřekvapilo! První vyzdvinhu živou hudbu na jevišti která je naprosto přesná a dokonalá. A i když jsem po lektorském úvodu měl obavu z \"předmětového divadla\", tak TO mě naopak naprosto fascinovalo a říkal jsem si ať to pokračuje ještě aspoň dvě hodiny. Musím vidět ještě jednou."
     },
     {
       "date": "20.01.2025",
@@ -154,8 +154,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Asi málo který herec by se na tuto roli hodil lépe, než Daniel Krejčík. Obě polohy jeho postavy jsem mu věřil bez výhrad. Stejně tak jeho vnitřní boj. Velmi příjemně mě překvapil Jiří Korn. Oceňuji také práci s prostorem jeviště a světly. Celkově by podle mého názoru inscenace mohla být o něco kratší, v mnoha pasážích se dost vleče. A nebál bych se přitlačit víc \"na pilu\", i když chápu, že v porovnání s ostatním repertoárem Fidlovačky může být i toto pro \"stálého diváka\" kontroverzní inscenace."
     },
     {
       "date": "26.01.2025",
@@ -168,8 +168,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Obavy z načtených recenzí a ohlasů, že se herci ztrácí někde v hlubinách Státní Opery se (aspoň pro mě) naštěstí nenaplnily. Ano, v druhé půli je inscenace odsunuta za orchestřiště, ale na síle jí to rozhodně neubírá. Rozjezd inscenace je (i vzhledem ke své délce) pomalejší, ale o to víc je pak poslední třetina mrazivější a strhující. Robert Mikluš mi opět potvrdil, že dokáže utáhnout i takovou \"kládu\". Generál Marka Daniela sice na první dobrou působí jako vtipná figurka, ale ve scéně před oponou všem úsměv zmrzne. Z dalších herců bych vyzdvihl Pavlu Beretovou, Filipa Kaňkovského a Pavlínu Štorkovou."
     },
     {
       "date": "27.01.2025",
@@ -196,7 +196,7 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -210,8 +210,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Métský salám jsem nikdy nemusel, ale Natálii Drabiščákovou žeru! Pavla Tomicová se jí v této inscenaci skvěle vyrovná a pozadu nezůstává ani Simona Lewandowska."
     },
     {
       "date": "29.01.2025",
@@ -224,8 +224,8 @@
       "genres": [
         "muzikál"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 60,
+      "comment": "Radek Melša je v roli Ježka přesný a je proto velká škoda, že inscenace téměř o Ježkovi není. Velkým plusem je živý orchestr. Dramatické pasáže z války mají také hodně silný účinek. Pánové Bilík a Havlínek coby V+W mají ve hře mnohem více prostoru a tak pokud jdete na představení s tím, že se dozvíte něco o Ježkovi, budete asi zklamání. Pokud bych měl hodnotit primárně herecké výkony tak bych dal klidně i 80%"
     },
     {
       "date": "30.01.2025",
@@ -238,8 +238,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "85% - velká spokojenost. Čtyři \"hlavní\" pánové (Mikluš, Orozovič, Krupa, Hochman) baví, dojímají a hlavně tvoří spoustu otázek pro diváky. Velký obdiv patří Pavle Beretové za její němou roli, která přesto dokázala říct \"vše\". A Marie Poulová ve scéně s nápadníkem... David Prachař už je pak jen trešinka celé inscenace. Musím také ocenit Tomáše Vtípila a jeho úžasnou živou hudební produkci."
     },
     {
       "date": "31.01.2025",
@@ -252,8 +252,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "75% Peer Gynt v podání Vojty Franců je milý naivní floutek, který vlastně neví kým je, nebo kým by rád byl. Nikdy není spokojený a tak se dostává postupně do čím dál větších potíží. Vizuálně velmi zajímavě zpracovaná inscenace, líbilo se mi například zpracování trollů a hlavně scéna s děckem byla hodně vtipná (Štěpán Gajdošík!). Při druhém shlédnutí po cca měsíci si to dobře sedlo a užíval jsem si i drobnější detaily, které mi poprvé unikly."
     },
     {
       "date": "01.02.2025",
@@ -266,7 +266,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -280,8 +280,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Jsou představení, která trvají hodinu, ale máte pocit, že jsou nekonečná. A pak máte představení jako toto, které má téměř tři hodiny, ale na konci je vám líto, že už je konec a chcete si v tom \"rochnit\" ještě dál. I když se to ze začátku tváří jako nevinná komedie, postupem času jde do tuhého a hlavně v druhé půlce pak tuhne úsměv. Všichni herci bez výjimky jsou ve svých rolích perfektní a je vidět, že si je užívají. Postupná proměna Karla (V.Zavadil) a Viktora (M.Kraus) Vás dostane. Musím vypíchnout Petra Pochopa, který jich stihne hned několik a v americké pasáži nás totálně rozsekal."
     },
     {
       "date": "07.02.2025",
@@ -294,8 +294,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Na relativně jednoduchém prostoru se odehrává zapeklité konverzační komediodrama o dvou mladých párech. Výborný je režijní nápad, kdy jsou všichni herci téměř celou dobu na scéně i pokud zrovna nehrají. Adam Petra Kulta je dojemný, vtipný, možná i roztomilý:) Výborná je také Martina Czyžová jako Evelyn. A pokud neznáte předlohu a neviděli jste film, tak pro vás to bude rozhodně plus. Viděno v Divadle v Dlouhé v rámci Festivalu 13+"
     },
     {
       "date": "11.02.2025",
@@ -336,7 +336,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -378,8 +378,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Hra náročná na inscenaci a o to víc pro Jakuba Koudelu, který sám odehraje všechny postavy. Transcendentální zážitek."
     },
     {
       "date": "20.02.2025",
@@ -392,8 +392,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Jsem rád za každé podobné představení, které mi zase o něco rozšíří mé obzory a povědomí o úžasných lidech z naší historie. Lucie Trmíková tento typ inscenací umí skvěle napsat a v případě Růženy Vackové i zahrát. Výborně ji doplňuje Vojtěch Franců v roli bachaře, ze kterého jde místy strach, ale na Vackovou je i tak krátký."
     },
     {
       "date": "23.02.2025",
@@ -434,8 +434,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Krev stříká (doslova), kosti praskají a Vandam, kterého v průběhu hry postupně hrají všichni čtyři pánové, vás poučí o životě."
     },
     {
       "date": "28.02.2025",
@@ -448,8 +448,8 @@
       "genres": [
         "amatérské"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Velice příjemné překvapení! Dá se říct, že to byl s malými výjimkami profesionální výkon celého souboru. Viděno na premiéře 28.2.2025"
     },
     {
       "date": "01.03.2025",
@@ -462,8 +462,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Předlohy neznalý jsem se poměrně dlouho zpočátku ztrácel a zejména linku se Septimem jsem nedokázal správně zařadit. Ale postupně se člověk do té atmosféry dostane a užívá si ten krásný červnový den. Všichni vytvořili svoje role dle mého názoru perfektně. Magdaléna Sidonová je ve své roli přesná. Hodně mě bavila dvoj postava Petera Walshe, kterou si pánové Vyorálek a Petrželka očividně užívají. A nelze nezmínit opět výbornou Anežku Kubátovou."
     },
     {
       "date": "02.03.2025",
@@ -476,8 +476,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Jak dává už prvních pár minut tušit, o \"alternu\" nebude v představení nouze. Hra o to, kdo koho víc znervózní začíná. Pánové Petřík a Slánský se ve svých rolí \"zlobivých kluků\" vyžívají. Dokážu si představit, že se to někdy v reálu mohlo na Hradě odehrávat podobně. Z toho bohužel zároveň i mrazí."
     },
     {
       "date": "03.03.2025",
@@ -504,8 +504,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Oproti většině hodnotících mám trošku nevýhodu že se nabízelo srovnání s TV minisérií, se kterou pochopitelně divadelní zpracování tak rozsáhlého a hlavně na akci a různá prostředí bohatého díla nemůže technicky vyrovnat. Tvůrci inscenace proto museli zvolit jiný přístup, kdy se velká část děje odehrává vlastně v mysli diváka na základě vyprávění ženských partnerek Josefa Hasila. Což si troufám říct, že se povedlo. Samotná postava Krále Šumavy ztvárněná Tomášem Drápelou splnila moji představu naplno. Ostatní herci mu výborně sekundují."
     },
     {
       "date": "06.03.2025",
@@ -560,8 +560,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "V první části se vám představí čtveřice maďarských vědců, každý podivín trochu jiným způsobem. V druhé části pak přichází Robert Oppenheimer. Inscenace je v té první části víc svižnější, komediálnější, právě díky čtyřem vědcům kteří spolu musí nějakým způsobem komunikovat a spolupracovat. Vtipně sem zapadá i postava Tomáše Kobra, který si zde mimo jiné střihne \"cameo\" ze své Draculovské role. V druhé části je inscenace už trochu pomalejší (možná by mohla být i kratší) a soustředí se prakticky výhradně na Oppenheimera (opět skvělý Kobr). Jakub Čermák i tak zvládá nenudit přemírou odborných výrazů a vtipně zapojuje i různé fyzikální experimenty"
     },
     {
       "date": "14.03.2025",
@@ -602,7 +602,7 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -616,8 +616,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Ivana Uhlířová - 100%!"
     },
     {
       "date": "20.03.2025",
@@ -630,8 +630,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 60,
+      "comment": "Předně musím zmínit Pavlu Gajdošíkovou, která dokázala Lízu vystihnout skvěle i včetně ostravského dialektu. Výborný je i Igor Bareš (coby Mr. Doolittle) a Marie Málková s Ivanou Wojtylovou. Jinak jsem od Palmovky čekal trochu víc, resp. víc aktualizace. Avizovaný steampunk je tady spíš náznakově (pokud nepočítám robota Boba, který je zde jen jako \"rekvizita\"). V druhé části se děj trochu zpomalí a zejména poslední část konfrontace Lízy a profesora Higginse se neúnosně vleče a ve výsledku úplně ztrácí nějaký emocionální náboj. A souhlasím, že chemie mezi hlavními postavami moc nefunguje."
     },
     {
       "date": "23.03.2025",
@@ -658,8 +658,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Naprosto skvělý Goran Maiello, který si dokáže urvat velkou část pozornosti na sebe. I Matěj Převrátil se se svojí složitou postavou popral výborně. Celkově to není úplně lehká inscenace, ale podařilo se myslím výborně vybalancovat komediální a tragickou linku."
     },
     {
       "date": "25.03.2025",
@@ -672,8 +672,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Těsný prostor Rubínu ještě umocňuje tísnivou atmosféru prostředí, ze kterého není úniku. Skvěle se tak během děje propadnete přímo mezi titulní fakany. Epizodky z jejich marného? života...často vulgární, obscéní, tělesné. Dá se říct typický Pasolini. Ondřej Pavelka skvěle zapadl mezi své mladší kolegy a věkový rozdíl v tomto případě vůbec nevadí."
     },
     {
       "date": "29.03.2025",
@@ -686,8 +686,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Inscenovat Krakatit na divadle není určitě jednoduché (taky jde zřejmě o teprve druhé nastudování po Švandově divadle ?, když nepočítám operu). Tvůrci šli cestou velmi jednoduché scény (ohraničené posuvnými závěsy) a spolehli se hlavně na výkony herců. Hlavně musím zmínit výbornou Týnu Průchovou a Marka Frňku, kteří inscenaci táhnou kupředu. Pro někoho, kdo nezná předlohu, budou možná trochu nejasné přechody mezi scénami/lokacemi, to je asi menší výtka."
     },
     {
       "date": "29.03.2025",
@@ -784,7 +784,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -798,7 +798,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -826,8 +826,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Už samotný půdní prostor v podkroví Malostranské besedy má své kouzlo, které je ještě umocněné výkony obou herců. Prostě máte pocit, že jste se skutečně ocitli přímo v bytě Kurta Cobaina. Díky naturelu postavy Sid Vicious má výhodu Daniel Kadlec, protože toho drzýho, sprostýho a vtipnýho týpka prostě musíte milovat. Tomáš Dalecký ale v žádném případě se ztvárněním Kurta nezaostává a i v menším prostoru vás dokáže dojmout."
     },
     {
       "date": "14.04.2025",
@@ -854,7 +854,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -868,8 +868,8 @@
       "genres": [
         "muzikál"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Za mě velmi povedená adaptace, kterou táhne ústřední hrdina v podání Vojty Franců a skvělý nápad s \"živou hudbou\" kterou vlastně tvoří jen vokály a jedno ukulele. Druhá polovina je podstatně svižnější. V první části trochu vázne válečná pasáž, ale chápu že pro celý kus je podstatná."
     },
     {
       "date": "11.05.2025",
@@ -882,7 +882,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -896,8 +896,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Za mě opravdu vydatná a skvělá hostina. Každý \"chod\" má své silné i slabší stránky, ale ty pozitivní převažují. Za mě byla zřejmě nejlepší poslední část s degustační papriček, ve které exceluje Václav Lupač a hned v závěsu pak rodinný oběd. Jsem rád, že jsme stihli derniéru a doufám, že se podaří případně hru nasadit i třeba někdy jindy a jinde."
     },
     {
       "date": "15.05.2025",
@@ -910,8 +910,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 60,
+      "comment": "Tomáš Petřík táhne celé představení a jeho Hjalmar je vtipný, bouřlivý i dojemný zároveň. Příjemně mě překvapila i Barbora Křupková v roli jeho dcery, které jsem celou dobu věřil, že jí je jen čtrnáct let. Jacob Erftemeijer se svým sametovým hlasem vás zase v některých scénách úplně hýčká, ale pak si uvědomíte, že právě v těchto scénách jeho Gregers pronáší ty nejhorší věty. Oceňuji taky jednoduchou \"severskou\" scénu, které bych možná jen vytknul jednu věc a sice když se v jedné části stěny \"zhroutí\", naruší akustiku a herce pak není moc slyšet. A ano, tři hodiny s Ibsenem se někdy pocitově táhnou."
     },
     {
       "date": "15.05.2025",
@@ -924,8 +924,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Už druhá hra od G.Clua na malé scéně Studia Dva, opět trochu proti klasickému proudu repertoáru tohoto divadla. Je vidět, že se i v komerčním divadle dá inscenovat hra s gay tématikou a nemusí to být prvoplánová řachanda. Příjemně překvapil Daniel Bambas v komediální roli, kdy se hlavně v druhé polovině vyřádil v sérii různých figurek na rande. Daniel s Jiřím k sobě dobře sedli, hra krásně svižně plyne a mírná interakce s publikem tomu jen pomáhá."
     },
     {
       "date": "19.05.2025",
@@ -966,8 +966,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Ač nejsem věkově úplně cílovka a knížku jsem nečetl, tak i přesto jsem myslím dostal co jsem očekával. Napínavý, akční, dobrodružný, vtipný, svižný divadelní zážitek. Navíc technicky skvěle zpracovaný (zajímavě vyřešená scéna, která řeší problém s tolika různými scénami bez nutnosti složitě měnit kulisy)."
     },
     {
       "date": "29.05.2025",
@@ -980,8 +980,8 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Aktuální 3. ročník ČH DAMU se ujal této poměrně komplikované hry dle mého názoru velmi dobře. Celý dej táhne zejména Marie Anna Myšičková (a v roli její dcery Barbora Vašíčková). Hned v závěsu musím zmínit Prokopa Košaře, který zde sice má menší role, ale o to je v nich výraznější. Navíc jak se potvrdilo už v Noci Tribádek, když Prokop hraje s Mariíí Annou partnery/manžele, je to koncert! Ostatní herci i když třeba mají malou roli (Marek Nagl), tak si dokáží pro sebe ten kousek skvěle \"ukrást\". Za mě tedy velmi povedené!"
     },
     {
       "date": "01.06.2025",
@@ -1022,8 +1022,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Lucie Žáčková opět potvrdila, že dokáže i s minimem dialogů vystihnout postupnou psychologickou proměnu své hrdinky Anny. Viktor Zavadil zase vtipně vystihl postavu cizince Virgila, bez zbytečného parodování.A nesmím zapomenout na Václava Šandu a jeho asi nejvtipnější postavu:)Předlohu jsem neznal, takže nemůžu srovnávat. Některé postavy mohly dostat víc prostoru, ale chápu že se do stopáže hry nedá nacpat všechno. Postupně děj z převážně komedie v druhé půli přechází do dramatu které se zarývá pod kůži. Jediné co mi vadilo spíš technicky je když herci hrají za plexi stěnou a hlasy snímají mikrofony, není občas moc rozumět."
     },
     {
       "date": "09.06.2025",
@@ -1064,8 +1064,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Další hra v divadle Komedie, kterou budou diváci buď milovat nebo odsuzovat (jak je vidět i z dosavadních hodnocení). Beáta Kaňoková i když nemá hlavní roli, jednoznačně kraluje celé hře. Tomáš Dalecký dostal po delší době konečně víc prostoru a skvěle ho využil. Za mě by hra mohla být o něco kratší."
     },
     {
       "date": "15.06.2025",
@@ -1078,7 +1078,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -1120,8 +1120,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Karolína Knězů je živel a tato role to opět potvrdila. Neskutečně husté drama ve stylu \"dvanáct rozhněvaných žen\" na malém prostoru postupně odkrývá jedno tajemství za druhým. Jedno z top přestavení roku 2025."
     },
     {
       "date": "22.06.2025",
@@ -1148,8 +1148,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Jak hodnotit něco takového??? Já nevím, to prostě nejde a musíte to vidět sami na vlastní kůži a cítit na vlastní oči. Kromě Kultovního Petra viděno s T.Čapkem, M.Frňkou,J.Staňkem,P.Urbanem a B.Bolíkovou."
     },
     {
       "date": "23.06.2025",
@@ -1162,8 +1162,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Inscenace pravděpodobně osloví víc mladší publikum, na které cílí, ale i mě naprosto dostala. Výkony hlavní trojice kluků z party (Říha, Klapil, Kult) úžasně doplňuje Jiří Zapletal, kterému bych věřil i kdyby hrál jednoho z party! Hlášky, drsné vtípky, ale postupně atmosféra houstne až do silného finále.  Podruhé viděno v letním kině Širák v HK 23.6.25, kde tomu venkovní prostředí (a i zřejmě lepší hudební aparatura) přidaly tzv. koule!"
     },
     {
       "date": "25.06.2025",
@@ -1190,8 +1190,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Viděno na hostovačce v Divadle Archa, které komornímu vyznění hry malinko uškodilo. Celou dobu vás hra nechává v napětí a když si myslíte že už přišel vrchol tak vám za chvíli opět vlepí nečekanou facku. O neskutečně silném závěru s extrémně nejednoznačným vyzněním nemluvě."
     },
     {
       "date": "28.06.2025",
@@ -1204,8 +1204,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 60,
+      "comment": "Vizuálně působivé, postavu Krysaře se podařilo udělat tajemnou a neuchopitelnou, i díky \"zvukům\" na mikrofon. Dějově ale příběh Krysaře na 90 minut nestačil a vizuální vjem postupně aspoň u mě vystřídala nuda. Přidávám 10% za interakci s publikem."
     },
     {
       "date": "14.07.2025",
@@ -1218,8 +1218,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Neskutečný uragán Václav Neužil jede téměř celou dobu na 150%! Čekal jsem průměrnou letní komedii, ale příjemné překvapení od všech zúčastněných i Petra Zelenky. Potěšila alternace Z. Kronerové, která postavu matky vysekla s grácií, že ji věříte i to, že...no nebudu spoilerovat. A Štěpán Benoni je už jen třešničkou na dortu."
     },
     {
       "date": "19.07.2025",
@@ -1358,7 +1358,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -1372,8 +1372,8 @@
       "genres": [
         "imersivní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Chvíli to trvá než se člověk rozkouká a zjistí co se vlastně děje a jak to celé funguje. Pak vás to ale skvěle nenásilně vtáhne do děje a než se nadějete je konec a vy zjistíte že jste možná nebyli ten večer na všech důležitých místech... takže asi budeme muset jít znovu:) Už jen pro ten skvělý zážitek!"
     },
     {
       "date": "31.08.2025",
@@ -1386,8 +1386,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Představení které vás nadchne po všech stránkách. Vizuálně úchvatné, vtipně napsané a zahrané, písničky které nenudí. A je to přesně ten typ představení na který můžete vzít celou rodinu. Herkules Ondřeje Běhana je na začátku dojemně naivní, ale v průběhu se promění v pravého hrdinu. Troufnu si říct, že nejoblíbenější postavou bude Cheiron v podání Jiřího Brnuly, který nejen že má úžasný \"kostým\", ale skvěle baví svým \"shrekovským oslíkem\"."
     },
     {
       "date": "31.08.2025",
@@ -1400,7 +1400,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -1442,7 +1442,7 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -1456,8 +1456,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Víc podobných projektů, které se snaží rozvířit stojaté vody historie. Forma kabaretu pomáhá tomuto nelehkému tématu ho lépe přijmout a zpracovat. Petr Reif je ve všech ztvárněných postavách skvělý a Ivana Huspeková i Hana Mathauserová mě dokázaly naprosto v některých scénách odbourat."
     },
     {
       "date": "25.09.2025",
@@ -1470,8 +1470,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Sled více či méně vtipných a více či méně absurdních scének, které jsou zarámované prodejnou hobby marketu. Ne všechny jsou dostatečně nosné, ale třeba scéna s křížem byla naprosto brilantní."
     },
     {
       "date": "27.09.2025",
@@ -1498,8 +1498,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Za mě skvělý nápad s \"dabingem/karaoke\" v úvodní scéně která diváka vtáhne do děje a představí jednotlivé postavy. Pocitově je tato část trochu dlouhá, ale pak se střihem vše změní a nastává skutečná \"hostina krkavců\". Herecké výkony jsou tradičně skvělé, prostor Galaxie na zážitku nic neubírá."
     },
     {
       "date": "01.10.2025",
@@ -1526,8 +1526,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Tohle bylo Trošku ... ne, hoodně ulítlý! :)) Určitě ne pro každého, ale kdo zná Ductus družinu tak si to rozhodně užije! Všichni byli úžasní."
     },
     {
       "date": "03.10.2025",
@@ -1540,8 +1540,8 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 60,
+      "comment": "Herecky zdařilé, hlavně M.Nagl a B.Bolíková excelentní. Ale i v malých rolích si dokáží např. M.A.Myšičková nebo P. Košař urvat pozornost. Celkově je hra dost náročná na orientaci v postavách i ději a přiznám se, že mi prostě nesedla."
     },
     {
       "date": "06.10.2025",
@@ -1568,8 +1568,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Viděno v Hradci Králové v rámci festivalu Čekání na Václava. Marek Cisovský z celé čtyřky za mě rozhodně nejlepší. Je možné že tomu větší scéna Klicperova divadla trochu uškodila na komorním vyznění. Nastudování v pražském Činoheráku mě bavilo o něco více."
     },
     {
       "date": "11.10.2025",
@@ -1587,7 +1587,7 @@
     },
     {
       "date": "11.10.2025",
-      "title": "Prašina 2",
+      "title": "Prašina 2 – Černý merkurit",
       "theatre": "Klicperovo divadlo",
       "place": "Hlavní scéna",
       "city": "Hradec Králové",
@@ -1596,8 +1596,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Když už jsme viděli \"jedničku\", museli jsme i na druhý díl. I když stále nejsme úplně cílová skupina:) V porovnání s prvním dílem je to mírně slabší, ale pořád velmi zábavná, mistrně technicky a herecky zvládnutá podívaná pro celou rodinu. Finální scéna \"odhalení\" měla koule. Každopádně asi ne všechny děti to bavilo, protože v řadě za námi seděla nějaká škola a většinu děje prokecali..."
     },
     {
       "date": "12.10.2025",
@@ -1624,8 +1624,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Velmi těžko se takové věci hodnotí...tak jen stručně. Ano, není to pro každého. Ano, jsou tam i jiní než tažní ptáci. Ale i přes poměrně vážné téma je to vtipné, hlavně Phillipp Schenker s jeho rozkošným německým přízvukem."
     },
     {
       "date": "15.10.2025",
@@ -1638,8 +1638,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Jak můžete vědět co do toho gothaje dneska dávají? Složení na etiketě? Nenechte se vysmát, papír snese všechno! Další výborný počin Ductusáků. Inscenace o tom, že každý má tu svoji pravdu. Ale je otázka, která pravda je ta pravdivá a která pravdivější? Dědova, dceřina, vnuččina? Vemte na to děti i (pra)rodiče! Dřív než to zakážou!!!"
     },
     {
       "date": "18.10.2025",
@@ -1652,8 +1652,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "I když Farinelli není (jak by se mohlo z názvu zdát) hlavní postavou hry, je přesto díky Vojtovi Franců hlavní hvězdou. Nechápu jak to dokázal, ale ten zpěv byl bezkonkurenční! Klidně bych snesl víc písní! Titulní král Viktora Dvořáka ale rozhodně nestojí v pozadí, naopak jsem si ho naprosto užíval. Karolína Knězů opět potvrzuje že se pro divadlo narodila. Epilog bych asi také vynechal, ale jinak vřele doporučuji!"
     },
     {
       "date": "22.10.2025",
@@ -1666,8 +1666,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Je to drsné, je to sprosté (jak se na Welshe sluší), na konci vám z toho veselo nebude. Ale určitě nebudete litovat že jste to viděli. Už jen kvůli \"mamince\" Dana Kranicha, který fakt snad zahraje všechno! Stejně tak strýc Jana Hájka...to mě mrazilo. I přes mírnou chaotičnost děje se v tom dá poměrně dobře orientovat, aspoň já jsem se v těch různých rovinách neztrácel. Ale někdy bych to chtěl vidět znovu, protože mi určitě dost věcí uniklo."
     },
     {
       "date": "23.10.2025",
@@ -1680,8 +1680,8 @@
       "genres": [
         "site specific"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Nejedná se vlastně o klasické představení, ale spíš o představení Činoheráku a ulice Ve Smečkách a jejich historie. Velmi příjemná hodinka s mladými herci (ano, i Viktor :)), kteří vás (někdy i dramaticky) provádí po různých zákoutích a podíváte se do zákulisí, do dalších domů, pasáže a ve finále i na střechu s krásným výhledem."
     },
     {
       "date": "26.10.2025",
@@ -1708,8 +1708,8 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Představení se rozjede jako typická Ductus \"prča\", každý z herců představuje vyhraněný archetyp (šprt, frajírek...), ale postupně všem začne docházet (i divákům), že to nebude úplně tak sranda. (viděno na premiéře 29/10)"
     },
     {
       "date": "29.10.2025",
@@ -1722,8 +1722,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 50,
+      "comment": "Znalý divák při návštěvě tohoto představení tak nějak tuší co může očekávat a skutečně očekávání nebyla překročena. Vyzdvihl bych výkon Romana Štabrňáka, díky kterému to nesklouzlo k úplné \"taškařici\" a Václava Jílka, který je ve své roli bláznivého bratra vlastně nejpřirozenější postava. Iva Janžurová se ctí hrou proplula, což se bohužel nedá říct o Evě Holubové, která očividně nebyla v kondici a poměrně často marně hledala text. (na hru jsme původně šli jako doprovod, který nakonec sám nemohl)"
     },
     {
       "date": "30.10.2025",
@@ -1750,7 +1750,7 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
+      "rating": 90,
       "comment": ""
     },
     {
@@ -1764,8 +1764,8 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Byl to konc... ne nebudu se opakovat:) Krátká a na první pohled jednoduchá hra o dvou dětech, které se jednoho dne střetnou na pískovišti. Následují situace, které asi většina v dětství zažila (dětinské hádky \"To je moje pískoviště!\", rozdělení území kdo si může kde hrát, šokující zjištění jistých anatomických rozdílů...) Ale na pozadí vtipných a často vyhrocených scén v tom nakonec vidíte své dospělé já, které kolikrát stejně urputně brání to svoje pískoviště a pak hledá toho \"kouzelníka\", který by vše zachránil. (viděno premiérově v kavárně Dejvického divadla) Ha, 333. hodnocení!"
     },
     {
       "date": "01.11.2025",
@@ -1792,8 +1792,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Ha, tak tohle byl teda úlet! Vrtulníčkem! Chvilku mi trvalo se naladit na strunu inscenace, ale pak se to krásně rozjelo a i když jsem \"klasiku\" nikdy předtím neviděl, tady jsem dostal přesnou vydestilovanou nálož z Moliéra. Petr Pochop +10%!"
     },
     {
       "date": "05.11.2025",
@@ -1806,8 +1806,8 @@
       "genres": [
         "imersivní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Dlouho jsme se osmělovali na představení vyrazit i když mě to téma hodně lákalo. A nelituji, že jsme se k tomu konečně odhodlali. I když to asi není zážitek pro každého, mě to rozhodně rozšířilo obzory, které bych jinde těžko objevil. Když strávíte téměř 1,5 hodinu v neznámém prostředí, neznámé situaci a k tomu nevidíte...zažijete skutečně neopakovatelný zážitek. Všem tvůrcům patří velká poklona za skvěle vymyšlené, sehrané a technicky zvládnuté představení."
     },
     {
       "date": "06.11.2025",
@@ -1820,8 +1820,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Kdo je tady vlastně to monstrum? Čtrnáctiletý problémový Darryl (v naprosto přesném ztvárnění Pavla Praise) nebo jeho nezkušený \"učitel\" (F.Hnilička), který se postupně propadá do svých vlastních problémů? Jednoduchá, mírně klaustrofobní scéna všemu dodává ještě lepší atmosféru a v některých scénách vám fakt ztuhne krev v žilách. Otevřený konec pak skvěle nechá na divákovi, aby si sám zodpověděl na vzniklé otázky."
     },
     {
       "date": "10.11.2025",
@@ -1988,8 +1988,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 100,
+      "comment": "Jen výjimečně jsem někdy dal 100%, ale tohle si to prostě zaslouží! Jen příprava celého projektu musela být neuvěřitelně náročná, hlavně na koordinaci, načasování, propojení všech částí aby fungovaly nejen technicky, ale aby to celé dávalo smysl a bavilo. Přitom premisa je celkem jednoduchá. Naživo sledujete making of brakového filmu, který se rovnou nad vámi promítá na plátně (bez předtáček, bez pauzy). Vydechl jsem až při závěrečných titulcích a nadšením jsem slzel. Určitě to musím vidět ještě jednou!"
     },
     {
       "date": "05.12.2025",
@@ -2002,8 +2002,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Když NÁM bylo míň, tak to bylo už hodně dávno. S tímto \"handicapem\" jsem šel i na toto představení. Naštěstí aspoň pro mě, se zase tak velká bariéra se nekonala. Pravda, chvílemi jsem se v klipovitem ději ztrácel a někde naopak při dlouhých monolozích člověk ztrácí pozornost, ale celkově mě to bavilo. Oceňuji hlavně komické, záměrně přestřelené výstupy Luciany, které tu celkovou neradostnou atmosféru rozčeří."
     },
     {
       "date": "06.12.2025",
@@ -2016,8 +2016,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Nejsem Hradečák, takže mi pár lokálních narážek zůstalo skryto, ale jinak i pro přespolní je to zábavný skutečný kabaret, kde se dozvíte i něco o Hradci (a taky o tom druhém městě poblíž) a každý z herců vám přiblíží svůj vztah k městu. Vše doplňuje skvělá živá hudba a vtipné texty písní."
     },
     {
       "date": "07.12.2025",
@@ -2030,7 +2030,7 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
