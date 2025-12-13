@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-13T14:54:11.600Z",
+  "generatedAt": "2025-12-13T14:58:57.679Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -2141,6 +2141,20 @@
       "removed": false,
       "genres": [
         "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "21.12.2025",
+      "title": "Potopa",
+      "theatre": "DAMU",
+      "place": "Divadlo DISK",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "studentské"
       ],
       "rating": null,
       "comment": ""
