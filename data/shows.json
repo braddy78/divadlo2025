@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-13T12:19:29.257Z",
+  "generatedAt": "2025-12-13T12:57:22.832Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -203,7 +203,7 @@
       "date": "28.01.2025",
       "title": "Lhářky",
       "theatre": "Divadlo Letí",
-      "place": "Vila Štvanice",
+      "place": "Divadlo VILA Štvanice",
       "city": "Praha",
       "host": false,
       "removed": false,
@@ -320,7 +320,7 @@
       "host": false,
       "removed": false,
       "genres": [
-        "studentské"
+        "alternativní"
       ],
       "rating": null,
       "comment": ""
@@ -426,7 +426,7 @@
     {
       "date": "26.02.2025",
       "title": "Národní třída",
-      "theatre": "Neurčeno",
+      "theatre": "Peškovka",
       "place": "Peškovka",
       "city": "Praha",
       "host": false,
@@ -636,7 +636,7 @@
     {
       "date": "23.03.2025",
       "title": "LK3P 2: Zelenavý ptáček",
-      "theatre": "Divadlo VILA Štvanice",
+      "theatre": "Geisslers Hofcomoedianten",
       "place": "Divadlo VILA Štvanice",
       "city": "Praha",
       "host": false,
@@ -1279,7 +1279,7 @@
     },
     {
       "date": "21.08.2025",
-      "title": "Rezavá Anna aneb zač je toho kost!",
+      "title": "Rezavá Anna aneb Zač je toho kost!",
       "theatre": "Geisslers Hofcomoedianten",
       "place": "Theatrum Kuks",
       "city": "Kuks",
@@ -1294,7 +1294,7 @@
     {
       "date": "21.08.2025",
       "title": "Casanova",
-      "theatre": "Spolek Jedl",
+      "theatre": "Spolek JEDL",
       "place": "Theatrum Kuks",
       "city": "Kuks",
       "host": false,
@@ -1748,7 +1748,7 @@
       "host": false,
       "removed": false,
       "genres": [
-        "alternativní"
+        "barokní"
       ],
       "rating": 90,
       "comment": ""
@@ -1834,8 +1834,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Nejde vlastně o klasické divadelní představení, ale jednotliví členové souboru si vybírají \"the best of\" internetových komentářů z webu a ty pak v sekcích prezentují. Takže každý díl \"seriálu\" je tím pádem unikátní. My měli štěstí např. na kauzy: \"KFC, cyklisté, Rajchlovo video...\""
     },
     {
       "date": "12.11.2025",
@@ -1855,7 +1855,7 @@
       "date": "13.11.2025",
       "title": "Dvě komedie v komedii",
       "theatre": "Geisslers Hofcomoedianten",
-      "place": "vila Štvanice",
+      "place": "Divadlo VILA Štvanice",
       "city": "Praha",
       "host": false,
       "removed": false,
@@ -2051,7 +2051,7 @@
       "date": "10.12.2025",
       "title": "HEROES",
       "theatre": "Divadlo Letí",
-      "place": "Vila Štvanice",
+      "place": "Divadlo VILA Štvanice",
       "city": "Praha",
       "host": false,
       "removed": false,
@@ -2093,7 +2093,7 @@
       "date": "14.12.2025",
       "title": "Puld a pudr",
       "theatre": "Geisslers Hofcomoedianten",
-      "place": "Vila Štvanice",
+      "place": "Divadlo VILA Štvanice",
       "city": "Praha",
       "host": false,
       "removed": false,
