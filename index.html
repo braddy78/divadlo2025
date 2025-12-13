@@ -1,194 +1,855 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Braddyovic Divadelní Sezóna 2025</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braddyovic Divadelní Sezóna 2025</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #09090b;
+            --card-bg: #131318;
+            --input-bg: #1f1f26;
+            --text-main: #e4e4e7;
+            --accent-pink: #f43f5e;
+            --accent-cyan: #06b6d4;
+            --accent-yellow: #f59e0b;
+            --accent-purple: #8b5cf6;
+            --border-color: #27272a;
 
-<style>
-:root{
- --bg:#07070b;
- --card:#12121a;
- --border:#242438;
- --cyan:#06f0ff;
- --pink:#ff2bd6;
- --purple:#8b5cf6;
- --text:#e5e7eb;
-}
-body{
- background:radial-gradient(circle at top,#14143a 0%,#07070b 60%);
- color:var(--text);
- font-family:Inter,Segoe UI,system-ui,sans-serif;
- padding-bottom:80px;
-}
-.header{
- text-align:center;
- padding:48px 0 32px;
- border-bottom:1px solid var(--border);
-}
-.header h1{
- font-weight:900;
- letter-spacing:.08em;
- color:white;
- text-shadow:0 0 18px var(--cyan);
-}
-.subtitle{
- color:#9ca3af;
-}
-.stat-card{
- background:linear-gradient(180deg,#131322,#0c0c16);
- border:1px solid var(--border);
- border-radius:14px;
- padding:20px;
- height:100%;
- transition:.25s;
- box-shadow:0 0 0 transparent;
-}
-.stat-card:hover{
- transform:translateY(-4px);
- box-shadow:0 0 25px rgba(6,240,255,.25);
- border-color:var(--cyan);
-}
-.stat-value{
- font-size:2.4rem;
- font-weight:900;
- color:white;
-}
-.stat-label{
- font-size:.75rem;
- text-transform:uppercase;
- letter-spacing:.18em;
- color:#9ca3af;
-}
-.section{
- margin-top:36px;
-}
-.chart-card{
- background:var(--card);
- border:1px solid var(--border);
- border-radius:14px;
- padding:18px;
- transition:.2s;
-}
-.chart-card:hover{
- box-shadow:0 0 18px rgba(139,92,246,.25);
-}
-.chart-title{
- color:var(--cyan);
- font-weight:700;
- font-size:.85rem;
- letter-spacing:.1em;
- text-transform:uppercase;
- margin-bottom:10px;
-}
-</style>
+            /* minimalist cyber */
+            --glow-cyan: rgba(6, 182, 212, 0.22);
+            --glow-pink: rgba(244, 63, 94, 0.18);
+            --glow-purple: rgba(139, 92, 246, 0.18);
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle at top, #1e1b4b 0%, #09090b 60%);
+            color: var(--text-main);
+            padding-bottom: 80px;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Header */
+        .header-section {
+            background: radial-gradient(circle at top, #1e1b4b 0%, #09090b 100%);
+            padding: 42px 0 34px;
+            border-bottom: 2px solid var(--accent-cyan);
+            box-shadow: 0 0 55px rgba(6, 182, 212, 0.18);
+            margin-bottom: 26px;
+        }
+
+        .glitch-text {
+            font-size: 2.4rem;
+            color: white;
+            text-shadow: 0 0 18px rgba(6, 182, 212, 0.25), 2px 2px 0px var(--accent-purple);
+        }
+
+        /* Stats Cards */
+        .stats-card {
+            background: linear-gradient(180deg, rgba(19, 19, 24, 0.95), rgba(12, 12, 18, 0.95));
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 18px 18px 16px;
+            text-align: left;
+            transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+            min-height: 110px;
+        }
+        .stats-card::before{
+            content:"";
+            position:absolute; inset:-2px;
+            background: radial-gradient(circle at 20% 0%, rgba(6,182,212,0.20), transparent 42%),
+                        radial-gradient(circle at 80% 10%, rgba(139,92,246,0.16), transparent 45%);
+            opacity: .75;
+            pointer-events:none;
+        }
+        .stats-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(6, 182, 212, 0.55);
+            box-shadow: 0 0 0 1px rgba(6,182,212,0.10), 0 18px 40px rgba(0,0,0,0.35);
+        }
+
+        .stats-number {
+            position: relative;
+            font-size: 2.35rem;
+            font-weight: 900;
+            line-height: 1.05;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 6px;
+        }
+        .stats-label {
+            position: relative;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            opacity: 0.92;
+            font-weight: 650;
+            color: rgba(228,228,231,0.88);
+        }
+        .stats-sub {
+            position: relative;
+            margin-top: 6px;
+            font-size: 0.82rem;
+            color: rgba(228,228,231,0.65);
+        }
+
+        /* Charts */
+        .chart-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 18px;
+            margin-bottom: 22px;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.22);
+            transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+        }
+        .chart-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(139,92,246,0.45);
+            box-shadow: 0 0 0 1px rgba(139,92,246,0.10), 0 18px 38px rgba(0,0,0,0.35);
+        }
+        .chart-title {
+            color: var(--accent-yellow);
+            font-size: 0.95rem;
+            margin-bottom: 14px;
+            border-left: 3px solid var(--accent-pink);
+            padding-left: 10px;
+            letter-spacing: 0.4px;
+        }
+
+        /* Filters */
+        .filter-bar {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px 14px 0 0;
+            padding: 15px;
+            margin-bottom: 0;
+        }
+        .form-control, .form-select {
+            background-color: var(--input-bg);
+            border: 1px solid var(--border-color);
+            color: white;
+            font-size: 0.9rem;
+        }
+        .form-control:focus, .form-select:focus {
+            background-color: #272730;
+            color: white;
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 0 3px rgba(6,182,212,0.12);
+        }
+
+        /* TABLE FIXES - AGGRESSIVE DARK MODE */
+        .table-container {
+            border: 1px solid var(--border-color);
+            border-top: none;
+            border-radius: 0 0 14px 14px;
+            overflow: hidden;
+            background-color: var(--card-bg);
+        }
+        .table-scroll {
+            overflow-y: auto;
+            max-height: 600px;
+        }
+        .table {
+            --bs-table-bg: var(--card-bg);
+            --bs-table-color: var(--text-main);
+            --bs-table-hover-bg: #27272a;
+            --bs-table-hover-color: white;
+            margin-bottom: 0;
+            background-color: var(--card-bg);
+            color: var(--text-main);
+        }
+        .table th, .table td {
+            background-color: var(--card-bg) !important;
+            color: var(--text-main) !important;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+        .table thead th {
+            background-color: #000000 !important;
+            color: var(--accent-cyan) !important;
+            border-bottom: 2px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .table tbody tr:hover td {
+            background-color: #1f1f26 !important;
+            color: white !important;
+            cursor: pointer;
+        }
+
+        /* Badges */
+        .badge-genre { background: rgba(139, 92, 246, 0.15); color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.3); }
+        .badge-city { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+        /* Cancelled row styling */
+        .cancelled-row td {
+            text-decoration: line-through;
+            opacity: 0.6;
+            color: #f43f5e !important;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-dark); }
+        ::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent-cyan); }
+    </style>
 </head>
 
 <body>
 
-<div class="header">
- <h1>BRADDYOVIC DIVADELNÍ SEZÓNA 2025</h1>
- <div class="subtitle">Dramaturgický audit odehraných titulů</div>
+<div class="header-section text-center">
+    <div class="container">
+        <h1 class="glitch-text">Braddyovic Divadelní Sezóna 2025</h1>
+        <p class="lead text-muted mt-2" style="color: var(--accent-cyan) !important;">
+            Dramaturgický profil 2025: Audit odehraných titulů, souborů a regionálních výjezdů.
+        </p>
+    </div>
 </div>
 
-<div class="container section">
- <div class="row g-3">
-  <div class="col-md-4"><div class="stat-card"><div class="stat-value" id="statTotal">0</div><div class="stat-label">Celkový počet zhlédnutí</div></div></div>
-  <div class="col-md-4"><div class="stat-card"><div class="stat-value" id="statTheatres">0</div><div class="stat-label">Unikátní soubory</div></div></div>
-  <div class="col-md-4"><div class="stat-card"><div class="stat-value" id="statAvg">—</div><div class="stat-label">Průměrné hodnocení</div></div></div>
+<div class="container">
 
-  <div class="col-md-4"><div class="stat-card"><div class="stat-value" id="statCities">0</div><div class="stat-label">Navštívená města</div></div></div>
-  <div class="col-md-4"><div class="stat-card"><div class="stat-value" id="statMonth">—</div><div class="stat-label">Nejsilnější měsíc</div></div></div>
-  <div class="col-md-4"><div class="stat-card"><div class="stat-value" id="statWeek">—</div><div class="stat-label">Týden na hraně</div></div></div>
- </div>
-</div>
+    <!-- 6 TOP STATS -->
+    <div class="row mb-4 g-3">
+        <div class="col-6 col-md-4">
+            <div class="stats-card">
+                <div class="stats-number" id="statTotal">0</div>
+                <div class="stats-label">🎫 Celkový počet zhlédnutí</div>
+            </div>
+        </div>
 
-<div class="container section">
- <div class="row g-3">
-  <div class="col-lg-8">
-   <div class="chart-card">
-    <div class="chart-title">Měsíční aktivita</div>
-    <canvas id="chartMonthly" height="120"></canvas>
-   </div>
-  </div>
-  <div class="col-lg-4">
-   <div class="chart-card">
-    <div class="chart-title">Distribuce hodnocení</div>
-    <canvas id="chartRatings" height="120"></canvas>
-   </div>
-  </div>
- </div>
+        <div class="col-6 col-md-4">
+            <div class="stats-card">
+                <div class="stats-number" id="statTheatres">0</div>
+                <div class="stats-label">🎭 Unikátní soubory</div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+            <div class="stats-card">
+                <div class="stats-number" id="statAvg">—</div>
+                <div class="stats-label">⭐ Průměrné hodnocení sezóny</div>
+                <div class="stats-sub" id="statAvgSub"></div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+            <div class="stats-card">
+                <div class="stats-number" id="statCities">0</div>
+                <div class="stats-label">🗺️ Navštívených měst</div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+            <div class="stats-card">
+                <div class="stats-number" id="statBusyMonth">—</div>
+                <div class="stats-label">📅 Nejsilnější měsíc</div>
+                <div class="stats-sub" id="statBusyMonthSub"></div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+            <div class="stats-card">
+                <div class="stats-number" id="statWeekEdge">—</div>
+                <div class="stats-label">🔥 Týden na hraně</div>
+                <div class="stats-sub" id="statWeekEdgeSub"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Busiest week banner (kept, but fed from same logic) -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="chart-card" style="padding: 14px 18px;">
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2">
+                    <div>
+                        <div class="text-white fw-bold">🔥 Nejnáročnější týden</div>
+                        <div class="text-muted small" id="busiestWeekText">—</div>
+                    </div>
+                    <div class="text-muted small">Měřeno počtem představení Po–Ne</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts row 1 -->
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="chart-card">
+                <h5 class="chart-title">📈 EKG Sezóny (Měsíční aktivita)</h5>
+                <div style="height: 250px;"><canvas id="chartMonthly"></canvas></div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="chart-card">
+                <h5 class="chart-title">📍 Geografie: Praha vs. Regiony</h5>
+                <div style="height: 250px;"><canvas id="chartLocation"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts row 2 -->
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="chart-card">
+                <h5 class="chart-title">🏆 Top 10 Souborů</h5>
+                <div style="height: 320px;"><canvas id="chartTheatres"></canvas></div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="chart-card">
+                <h5 class="chart-title">🔁 Top 10 Reprízovaných představení</h5>
+                <div style="height: 320px;"><canvas id="chartRepeats"></canvas></div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="chart-card">
+                <h5 class="chart-title">⭐ Distribuce hodnocení (0–100 po desítkách)</h5>
+                <div style="height: 320px;"><canvas id="chartRatings"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters + Table -->
+    <div class="row" id="dataSection">
+        <div class="col-12">
+            <div class="filter-bar">
+                <div class="row g-2 align-items-end">
+                    <div class="col-md-3">
+                        <label class="form-label text-white-50">🔍 Hledat název</label>
+                        <input type="text" id="filterTitle" class="form-control" placeholder="Např. Peer Gynt...">
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-white-50">🎭 Soubor</label>
+                        <select id="filterTheatre" class="form-select"><option value="">Vše</option></select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-white-50">📍 Město/Místo</label>
+                        <select id="filterCity" class="form-select"><option value="">Vše</option></select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-white-50">🧠 Žánr</label>
+                        <select id="filterGenre" class="form-select"><option value="">Vše</option></select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label text-white-50">📅 Měsíc</label>
+                        <select id="filterMonth" class="form-select">
+                            <option value="">Vše</option>
+                            <option value="0">Leden</option><option value="1">Únor</option>
+                            <option value="2">Březen</option><option value="3">Duben</option>
+                            <option value="4">Květen</option><option value="5">Červen</option>
+                            <option value="6">Červenec</option><option value="7">Srpen</option>
+                            <option value="8">Září</option><option value="9">Říjen</option>
+                            <option value="10">Listopad</option><option value="11">Prosinec</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-outline-info w-100" onclick="resetFilters()">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <div class="table-scroll">
+                    <table class="table table-dark table-hover mb-0">
+                        <thead>
+                            <tr>
+                                <th style="width: 100px;">Datum</th>
+                                <th>Název představení</th>
+                                <th>Soubor</th>
+                                <th>Místo / Divadlo</th>
+                                <th>Město</th>
+                                <th>Žánr</th>
+                                <th style="width: 110px;">Hodnocení</th>
+                                <th style="width: 120px;">Komentář</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+                <div class="p-2 text-center text-muted small border-top border-secondary bg-dark">
+                    Zobrazeno <span id="visibleCount">0</span> záznamů
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script>
-Chart.defaults.color='#9ca3af';
-Chart.defaults.font.family='Inter,Segoe UI,sans-serif';
+/* --- 1. DATASET --- */
+let shows = [];
 
-let shows=[],data=[];
+/* --- 2. LOGIKA & ZPRACOVÁNÍ --- */
+Chart.defaults.font.family = "'Segoe UI', sans-serif";
+Chart.defaults.color = '#a1a1aa';
+Chart.defaults.borderColor = '#27272a';
 
-fetch('data/shows.json')
- .then(r=>r.json())
- .then(j=>{
-  shows=j.shows||j;
-  init();
- });
+const months = ["Leden","Únor","Březen","Duben","Květen","Červen","Červenec","Srpen","Září","Říjen","Listopad","Prosinec"];
 
-function parseDate(s){
- const p=s.split('.');
- return new Date(p[2],p[1]-1,p[0]);
+let filters = { title: "", theatre: "", city: "", genre: "", month: "" };
+
+async function loadShows() {
+    const url = new URL('data/shows.json', window.location.href).toString();
+    const res = await fetch(url, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Nepodařilo se načíst data (${res.status}) z ${url}`);
+    const json = await res.json();
+
+    if (Array.isArray(json)) {
+        shows = json;
+        return;
+    }
+    if (Array.isArray(json?.shows)) {
+        shows = json.shows;
+        return;
+    }
+    if (Array.isArray(json?.rawData)) {
+        shows = json.rawData.map(r => ({
+            date: r[0],
+            title: r[1],
+            theatre: r[2],
+            place: r[3],
+            city: r[4] || '',
+            host: false,
+            removed: false,
+            genres: String(r[5] || '').split(/[;|,]/).map(x=>x.trim()).filter(Boolean),
+            rating: null,
+            comment: ''
+        }));
+        return;
+    }
+    shows = [];
 }
 
-function init(){
- data=shows.map(s=>{
-  const d=parseDate(s.date);
-  return {...s,dateObj:d,month:d.getMonth()};
- });
-
- document.getElementById('statTotal').textContent=data.length;
- document.getElementById('statTheatres').textContent=[...new Set(data.map(d=>d.theatre))].length;
- document.getElementById('statCities').textContent=[...new Set(data.map(d=>d.city))].length;
-
- const ratings=data.map(d=>+d.rating).filter(n=>!isNaN(n));
- document.getElementById('statAvg').textContent=ratings.length?Math.round(ratings.reduce((a,b)=>a+b)/ratings.length)+' %':'—';
-
- const byMonth={};
- data.forEach(d=>byMonth[d.month]=(byMonth[d.month]||0)+1);
- const bestM=Object.entries(byMonth).sort((a,b)=>b[1]-a[1])[0];
- document.getElementById('statMonth').textContent=bestM?['Leden','Únor','Březen','Duben','Květen','Červen','Červenec','Srpen','Září','Říjen','Listopad','Prosinec'][bestM[0]]+' • '+bestM[1]:'—';
-
- const weeks={};
- data.forEach(d=>{
-  const m=new Date(d.dateObj);
-  m.setDate(m.getDate()-((m.getDay()+6)%7));
-  const k=m.toISOString().slice(0,10);
-  weeks[k]=(weeks[k]||0)+1;
- });
- const bw=Object.entries(weeks).sort((a,b)=>b[1]-a[1])[0];
- document.getElementById('statWeek').textContent=bw?bw[0]+' • '+bw[1]:'—';
-
- renderCharts(ratings,byMonth);
+function parseDate(str) {
+    const p = String(str).trim().split('.');
+    const dd = parseInt(p[0], 10);
+    const mm = parseInt(p[1], 10) - 1;
+    const yyyy = parseInt(p[2], 10);
+    return new Date(yyyy, mm, dd);
 }
 
-function renderCharts(ratings,byMonth){
- new Chart(chartMonthly,{
-  type:'line',
-  data:{labels:Object.keys(byMonth),datasets:[{data:Object.values(byMonth),borderColor:'#06f0ff',tension:.4}]},
-  options:{plugins:{legend:{display:false}}}
- });
-
- const bins=new Array(10).fill(0);
- ratings.forEach(r=>bins[Math.min(9,Math.floor(r/10))]++);
- new Chart(chartRatings,{
-  type:'bar',
-  data:{labels:['0–9','10–19','20–29','30–39','40–49','50–59','60–69','70–79','80–89','90–100'],datasets:[{data:bins,backgroundColor:'#ff2bd6'}]},
-  options:{plugins:{legend:{display:false}}}
- });
+function getCity(show) {
+    if (show && typeof show === 'object') {
+        if (show.city && show.city.trim()) return show.city.trim();
+        return "Praha";
+    }
+    return "Praha";
 }
+
+let processedData = [];
+
+async function initData() {
+    await loadShows();
+
+    processedData = (shows || []).map((s, idx) => {
+        const dateObj = parseDate(s.date);
+        const genresArr = Array.isArray(s.genres) ? s.genres : (s.genre ? [s.genre] : []);
+        const cleanGenres = genresArr.map(g => String(g || '').trim()).filter(Boolean);
+        const primaryGenre = cleanGenres[0] || '';
+
+        const ratingVal = (s.rating === null || s.rating === undefined || s.rating === '') ? null : Number(s.rating);
+
+        return {
+            __idx: idx,
+            rawDate: s.date,
+            date: dateObj,
+            title: s.title || '',
+            theatre: s.theatre || '',
+            place: s.place || '',
+            city: getCity(s),
+            genres: cleanGenres,
+            genre: primaryGenre,
+            host: !!s.host,
+            removed: !!s.removed,
+            rating: (ratingVal !== null && !Number.isNaN(ratingVal)) ? ratingVal : null,
+            comment: s.comment || '',
+            monthIdx: dateObj.getMonth(),
+            dayIdx: dateObj.getDay()
+        };
+    });
+
+    populateSelects();
+    updateDashboard();
+}
+
+function populateSelects() {
+    const getUnique = (key) => [...new Set(processedData.map(d => d[key]).filter(Boolean))].sort();
+
+    const theatreSel = document.getElementById('filterTheatre');
+    theatreSel.length = 1;
+    getUnique('theatre').forEach(t => theatreSel.add(new Option(t, t)));
+
+    const citySel = document.getElementById('filterCity');
+    citySel.length = 1;
+    getUnique('city').forEach(c => citySel.add(new Option(c, c)));
+
+    const allGenres = [...new Set(processedData.flatMap(d => d.genres || []))].sort();
+    const genreSel = document.getElementById('filterGenre');
+    genreSel.length = 1;
+    allGenres.forEach(g => genreSel.add(new Option(g, g)));
+}
+
+/* --- 3. RENDEROVÁNÍ --- */
+function updateDashboard() {
+    const filtered = processedData.filter(d => {
+        const mMatch = filters.month === "" || d.monthIdx == filters.month;
+        const tMatch = d.title.toLowerCase().includes(filters.title.toLowerCase());
+        const thMatch = filters.theatre === "" || d.theatre === filters.theatre;
+        const cMatch = filters.city === "" || d.city === filters.city;
+        const gMatch = filters.genre === "" || (d.genres || []).includes(filters.genre);
+        return mMatch && tMatch && thMatch && cMatch && gMatch;
+    });
+
+    updateStats(filtered);
+    renderCharts(filtered);
+    renderTable(filtered);
+}
+
+function updateStats(data) {
+    document.getElementById('statTotal').innerText = data.length;
+    document.getElementById('statTheatres').innerText = new Set(data.map(d=>d.theatre)).size;
+    document.getElementById('statCities').innerText = new Set(data.map(d=>d.city)).size;
+
+    // AVG rating (only filled)
+    const ratings = data
+        .map(d => d.rating)
+        .filter(v => v !== null && v !== undefined && !Number.isNaN(v));
+
+    const avgEl = document.getElementById('statAvg');
+    const avgSub = document.getElementById('statAvgSub');
+    if (!ratings.length) {
+        avgEl.innerText = "—";
+        if (avgSub) avgSub.textContent = "bez hodnocení";
+    } else {
+        const avg = Math.round(ratings.reduce((a,b)=>a+b,0) / ratings.length);
+        avgEl.innerText = `${avg} %`;
+        if (avgSub) avgSub.textContent = `${ratings.length} hodnocení`;
+    }
+
+    // Nejsilnější měsíc (month + count)
+    const monthCounts = new Array(12).fill(0);
+    data.forEach(d => monthCounts[d.monthIdx]++);
+    let bestMonthIdx = -1, bestMonthVal = 0;
+    monthCounts.forEach((v,i)=>{ if(v>bestMonthVal){bestMonthVal=v;bestMonthIdx=i;} });
+
+    const mEl = document.getElementById('statBusyMonth');
+    const mSub = document.getElementById('statBusyMonthSub');
+    if (bestMonthIdx >= 0 && bestMonthVal > 0) {
+        mEl.innerText = months[bestMonthIdx];
+        if (mSub) mSub.textContent = `${bestMonthVal} představení`;
+    } else {
+        mEl.innerText = "—";
+        if (mSub) mSub.textContent = "";
+    }
+
+    // Busiest week (Mon–Sun)
+    const startOfWeekMonday = (dt) => {
+        const d = new Date(dt.getFullYear(), dt.getMonth(), dt.getDate());
+        const day = (d.getDay() + 6) % 7;
+        d.setDate(d.getDate() - day);
+        d.setHours(0,0,0,0);
+        return d;
+    };
+    const key = (d) => d.toISOString().slice(0,10);
+    const weekCounts = {};
+    data.forEach(item => {
+        const w = startOfWeekMonday(item.date);
+        const k = key(w);
+        weekCounts[k] = (weekCounts[k] || 0) + 1;
+    });
+
+    let bestK = null, bestV = 0;
+    Object.entries(weekCounts).forEach(([k,v]) => {
+        if (v > bestV) { bestV = v; bestK = k; }
+    });
+
+    const weekEdgeEl = document.getElementById('statWeekEdge');
+    const weekEdgeSub = document.getElementById('statWeekEdgeSub');
+    const busiestWeekText = document.getElementById('busiestWeekText');
+
+    const fmt = (d) => String(d.getDate()).padStart(2,'0') + "." + String(d.getMonth()+1).padStart(2,'0') + "." + d.getFullYear();
+
+    if (!bestK) {
+        if (weekEdgeEl) weekEdgeEl.innerText = "—";
+        if (weekEdgeSub) weekEdgeSub.textContent = "";
+        if (busiestWeekText) busiestWeekText.textContent = "—";
+    } else {
+        const monday = new Date(bestK);
+        const sunday = new Date(monday); sunday.setDate(sunday.getDate() + 6);
+
+        if (weekEdgeEl) weekEdgeEl.innerText = `${fmt(monday)}–${fmt(sunday)}`;
+        if (weekEdgeSub) weekEdgeSub.textContent = `${bestV} představení`;
+
+        if (busiestWeekText) busiestWeekText.textContent = `${fmt(monday)} – ${fmt(sunday)} • ${bestV} představení`;
+    }
+}
+
+let charts = {};
+
+function renderCharts(data) {
+    const countBy = (keyFn) => {
+        const acc = {};
+        data.forEach(d => { const k = keyFn(d); acc[k] = (acc[k]||0)+1; });
+        return acc;
+    };
+
+    // 1) Monthly activity
+    const monthly = new Array(12).fill(0);
+    data.forEach(d => monthly[d.monthIdx]++);
+    createOrUpdateChart('chartMonthly', 'line', months, monthly, '#06b6d4', { fill: true });
+
+    // 2) Location
+    const cityRaw = countBy(d => d.city);
+    const prahaVal = cityRaw["Praha"] || 0;
+    delete cityRaw["Praha"];
+    const sortedCities = Object.entries(cityRaw).sort((a,b)=>b[1]-a[1]);
+    const locLabels = ["Praha (Vše)", ...sortedCities.map(x=>x[0])];
+    const locData = [prahaVal, ...sortedCities.map(x=>x[1])];
+    const locColors = ['#06b6d4', '#f59e0b', '#f43f5e', '#8b5cf6', '#10b981', '#ff8c00'];
+    createOrUpdateChart('chartLocation', 'bar', locLabels, locData, locColors);
+
+    // 3) Top 10 theatres
+    const theatreRaw = Object.entries(countBy(d=>d.theatre))
+        .sort((a,b)=>b[1]-a[1])
+        .slice(0,10);
+    createOrUpdateChart('chartTheatres', 'bar',
+        theatreRaw.map(x=>x[0]),
+        theatreRaw.map(x=>x[1]),
+        '#f43f5e',
+        { indexAxis: 'y' }
+    );
+
+    // 4) Top 10 repeated titles
+    const titleCounts = countBy(d=>d.title);
+    const repeatsRaw = Object.entries(titleCounts)
+        .filter(([,v]) => v > 1)
+        .sort((a,b)=>b[1]-a[1])
+        .slice(0,10);
+
+    createOrUpdateChart('chartRepeats', 'bar',
+        repeatsRaw.length ? repeatsRaw.map(x=>x[0]) : ["—"],
+        repeatsRaw.length ? repeatsRaw.map(x=>x[1]) : [0],
+        '#8b5cf6',
+        { indexAxis: 'y' }
+    );
+
+    // 5) Rating distribution: 0,10,20,...100 (11 bins), ignore nulls
+    const ratings = data
+        .map(d => d.rating)
+        .filter(v => v !== null && v !== undefined && !Number.isNaN(v));
+
+    const bins = new Array(11).fill(0); // 0..10 => 0..100
+    ratings.forEach(r => {
+        const rr = Math.max(0, Math.min(100, Number(r)));
+        const idx = Math.min(10, Math.floor(rr / 10));
+        bins[idx] += 1;
+    });
+
+    const labels = ["0","10","20","30","40","50","60","70","80","90","100"];
+    createOrUpdateChart('chartRatings', 'bar', labels, bins, '#f59e0b');
+}
+
+function createOrUpdateChart(id, type, labels, data, colors, extraOpts = {}) {
+    const ctx = document.getElementById(id).getContext('2d');
+    const bgColors = Array.isArray(colors) ? colors : (type === 'line' ? 'rgba(6, 182, 212, 0.2)' : colors);
+
+    if (charts[id]) {
+        charts[id].data.labels = labels;
+        charts[id].data.datasets[0].data = data;
+        charts[id].data.datasets[0].backgroundColor = bgColors;
+        charts[id].update();
+    } else {
+        charts[id] = new Chart(ctx, {
+            type: type,
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Počet',
+                    data: data,
+                    backgroundColor: bgColors,
+                    borderColor: type==='line'?colors:'transparent',
+                    borderWidth: 2,
+                    borderRadius: 4,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: type === 'doughnut' ? {} : {
+                    x: { grid: { display: false } },
+                    y: { beginAtZero: true, grid: { color: '#27272a' } }
+                },
+                onClick: (e, el) => handleChartClick(el, id, labels),
+                ...extraOpts
+            }
+        });
+    }
+}
+
+/* --- Interakce grafů -> Filtry --- */
+function handleChartClick(elements, chartId, labels) {
+    if (!elements.length) return;
+    const idx = elements[0].index;
+    const label = labels[idx];
+
+    if (chartId === 'chartMonthly') {
+        document.getElementById('filterMonth').value = idx;
+    } else if (chartId === 'chartTheatres') {
+        document.getElementById('filterTheatre').value = label;
+    } else if (chartId === 'chartRepeats') {
+        document.getElementById('filterTitle').value = label === "—" ? "" : label;
+    } else if (chartId === 'chartLocation') {
+        document.getElementById('filterCity').value = (label === "Praha (Vše)") ? "Praha" : label;
+    }
+
+    applyFilters();
+}
+
+function renderTable(data) {
+    const tbody = document.getElementById('tableBody');
+    tbody.innerHTML = '';
+
+    data.sort((a,b) => a.date - b.date);
+
+    data.forEach(row => {
+        const tr = document.createElement('tr');
+        if (row.removed) tr.classList.add('cancelled-row');
+
+        const cityBadge = row.city && row.city !== "Praha"
+            ? `<span class="badge badge-city ms-2">${row.city}</span>`
+            : '';
+
+        const ratingText = (row.rating === null || row.rating === undefined || Number.isNaN(row.rating))
+            ? `<span class="opacity-50">—</span>`
+            : `<span class="text-white fw-bold">${Math.round(row.rating)}&nbsp;%</span>`;
+
+        const hasComment = row.comment && row.comment.trim().length > 0;
+        const commentBtn = hasComment
+            ? `<button class="btn btn-sm btn-outline-warning" onclick="openCommentModal(${row.__idx})">Komentář</button>`
+            : `<button class="btn btn-sm btn-outline-secondary" disabled>—</button>`;
+
+        const genreBadges = (row.genres && row.genres.length)
+            ? row.genres.map(g => `<span class="badge badge-genre me-1">${g}</span>`).join('')
+            : (row.genre ? `<span class="badge badge-genre">${row.genre}</span>` : `<span class="opacity-50">—</span>`);
+
+        const removedTag = row.removed ? ` <span class="badge bg-danger ms-1">STAŽENO</span>` : '';
+
+        tr.innerHTML = `
+            <td><span class="text-white fw-bold">${row.rawDate || ''}</span></td>
+            <td class="text-white">${row.title}${removedTag}</td>
+            <td>${row.theatre}</td>
+            <td class="small text-muted">${row.place}</td>
+            <td>${cityBadge || '<span class="opacity-50">Praha</span>'}</td>
+            <td>${genreBadges}</td>
+            <td>${ratingText}</td>
+            <td>${commentBtn}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+
+    document.getElementById('visibleCount').innerText = data.length;
+}
+
+/* --- 4. OVLÁDÁNÍ --- */
+function openCommentModal(idx) {
+    const row = processedData.find(d => d.__idx === idx);
+    if (!row) return;
+
+    const titleEl = document.getElementById('commentModalTitle');
+    const bodyEl = document.getElementById('commentModalBody');
+    const metaEl = document.getElementById('commentModalMeta');
+    const ratingEl = document.getElementById('commentModalRating');
+
+    titleEl.textContent = row.title || 'Komentář';
+    metaEl.textContent = `${row.theatre || ''} • ${row.place || ''} • ${row.rawDate || ''}`.replace(/\s+•\s+•/g,' •').trim();
+
+    if (row.rating !== null && row.rating !== undefined && !Number.isNaN(row.rating)) {
+        ratingEl.style.display = '';
+        ratingEl.textContent = `${Math.round(row.rating)} %`;
+    } else {
+        ratingEl.style.display = 'none';
+    }
+
+    bodyEl.textContent = (row.comment && row.comment.trim()) ? row.comment.trim() : '—';
+
+    const modalEl = document.getElementById('commentModal');
+    const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+    modal.show();
+}
+
+function applyFilters() {
+    filters.title = document.getElementById('filterTitle').value;
+    filters.theatre = document.getElementById('filterTheatre').value;
+    filters.city = document.getElementById('filterCity').value;
+    filters.genre = document.getElementById('filterGenre').value;
+    filters.month = document.getElementById('filterMonth').value;
+
+    if(filters.title !== "") {
+        document.getElementById("dataSection").scrollIntoView({ behavior: 'smooth' });
+    }
+    updateDashboard();
+}
+
+function resetFilters() {
+    document.getElementById('filterTitle').value = "";
+    document.getElementById('filterTheatre').value = "";
+    document.getElementById('filterCity').value = "";
+    document.getElementById('filterGenre').value = "";
+    document.getElementById('filterMonth').value = "";
+    applyFilters();
+}
+
+// Listeners
+['filterTitle', 'filterTheatre', 'filterCity', 'filterGenre', 'filterMonth'].forEach(id => {
+    document.getElementById(id).addEventListener('change', applyFilters);
+    if (id === 'filterTitle') {
+         document.getElementById(id).addEventListener('input', applyFilters);
+    }
+});
+
+// Start
+initData().catch(console.error);
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Comment Modal -->
+<div class="modal fade" id="commentModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="background: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-main);">
+      <div class="modal-header" style="border-bottom: 1px solid var(--border-color);">
+        <h5 class="modal-title" id="commentModalTitle">Komentář</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
+          <span class="badge bg-info text-dark" id="commentModalRating" style="display:none;"></span>
+          <span class="badge bg-secondary" id="commentModalMeta"></span>
+        </div>
+        <div id="commentModalBody" class="lh-lg" style="white-space: pre-wrap;"></div>
+      </div>
+      <div class="modal-footer" style="border-top: 1px solid var(--border-color);">
+        <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Zavřít</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
