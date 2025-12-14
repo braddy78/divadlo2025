@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-14T12:12:59.981Z",
+  "generatedAt": "2025-12-14T22:31:46.540Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -3514,7 +3514,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -3528,8 +3528,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 60,
+      "comment": "Příjemná konverzační komedie s mírně smutným podtónem, ale s výbornými hlavními představiteli."
     },
     {
       "date": "14.12.2025",
