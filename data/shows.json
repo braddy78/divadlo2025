@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-14T11:16:35.913Z",
+  "generatedAt": "2025-12-14T12:12:59.981Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -28,7 +28,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -42,7 +42,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -56,21 +56,21 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
       "date": "26.01.2024",
       "title": "Vlaštovka",
       "theatre": "Studio DVA divadlo",
-      "place": "Studio DVA divadlo",
+      "place": "Studio DVA divadlo (Malá scéna)",
       "city": "Praha",
       "host": false,
       "removed": false,
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 100,
       "comment": ""
     },
     {
@@ -84,7 +84,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -98,7 +98,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -112,7 +112,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -140,7 +140,7 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -154,7 +154,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -168,7 +168,7 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -182,7 +182,7 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -196,7 +196,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -210,7 +210,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -224,7 +224,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -238,7 +238,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 90,
       "comment": ""
     },
     {
@@ -252,8 +252,8 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Inscenace která vás doslova vtáhne do děje. Zažijete nečekané situace, napínavý děj, technická \"udělátka\", vtipné situace, hudební a taneční čísla a navrch ještě interaktivní zapojení do hry, kterého se ale nemusíte bát:) Celé to uteklo nečekaně rychle a až mě překvapilo že jsme tam strávili přes dvě hodiny. Geissleři opět nezklamali."
     },
     {
       "date": "10.03.2024",
@@ -266,7 +266,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -280,7 +280,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -294,8 +294,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 60,
+      "comment": "Vcelku průměrná hra, kterou zachraňují jen výkony Miroslava Hanuše, Martina Donutila a Dany Batulkové."
     },
     {
       "date": "23.03.2024",
@@ -308,7 +308,7 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -350,8 +350,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 60,
+      "comment": "65% za obě dámy v hlavních rolích."
     },
     {
       "date": "01.04.2024",
@@ -364,8 +364,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Martin Pechlát prostě JE Casanova. Prakticky nemám co vytknout, snad jen že by klidně na jevišti mohl být sám a nepochybně by utáhl celé představení i bez menší role Lucie Trmíkové."
     },
     {
       "date": "02.04.2024",
@@ -378,8 +378,8 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Vtipná, hravá, hudební jednohubka"
     },
     {
       "date": "04.04.2024",
@@ -392,8 +392,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 60,
+      "comment": "Plusy: výkon Barbary Lukešové a Štěpánky Fingerhutové, útulná realistická scéna, velmi silný příběh, který ani po tolika letech neztrácí na účinku. Mínusy: délka (i pocitová) představení, použití portů, scéna s terapeutem."
     },
     {
       "date": "05.04.2024",
@@ -420,8 +420,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Velmi příjemné překvapení. R.U.R. se na rozdíl od jiných Čapkových her tolik nenasazuje, proto jsem rád že jsem si hru mohl užít právě v DISKu a s tímto ročníkem. Oceňuji změnu konce děje. Za zmínku stojí výkony Matěje Převrátila v roli Galla a Vojtěcha Franců, jehož robot je zároveň děsivý i dojemný."
     },
     {
       "date": "08.04.2024",
@@ -448,7 +448,7 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
+      "rating": 90,
       "comment": ""
     },
     {
@@ -462,7 +462,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -476,7 +476,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -490,7 +490,7 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -504,7 +504,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -518,7 +518,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -532,7 +532,7 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -541,8 +541,8 @@
       "theatre": "Divadlo Na zábradlí",
       "place": "Divadlo Na zábradlí",
       "city": "Praha",
-      "host": true,
-      "removed": true,
+      "host": false,
+      "removed": false,
       "genres": [
         "činohra"
       ],
@@ -560,8 +560,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Důkaz, že i Brecht se dá udělat zábavný a stravitelný. I když svatebčanům zustala po svatební hostině jistě pachuť v ústech. Karolína Knězů opět perfektní!"
     },
     {
       "date": "03.06.2024",
@@ -574,22 +574,22 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Abych zůstal věrný duchu inscenace, nechal jsem Al přespat své hodnocení do stylu Dona Juana: Ach, jaký skvost jsem měl tu čest zhlédnout! Divadelní hra \"Don Juan a já\" mi poskytla nevýslovné potěšení. Už jen fakt, že jsem sám z oboru, přidal hře na přitažlivosti. V každé roli jsem spatřil někoho, koho jsem kdy v práci potkal? kolegové, nadřízení, ba dokonce i ti neúnavní úředníci. Je pravda, že postavy mluvily na současnou dobu a zasazení hry až příliš vznešeně a spisovně. Bylo to, jako by naslouchaly dávným mistrům jazyka, což snadno překročilo hranici přirozenosti. Ale i přesto, nebo právě proto, byla hra provedena s elegancí a důvtipem"
     },
     {
       "date": "04.06.2024",
       "title": "Perplex",
       "theatre": "Činoherní studio Ústí nad Labem",
-      "place": "Divadlo Komedie",
-      "city": "Praha",
-      "host": true,
+      "place": "Činoherní studio Ústí nad Labem",
+      "city": "Ústí nad Labem",
+      "host": false,
       "removed": false,
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Ze všech dosud viděných zpracování Perplexu, ústecká inscenace jednoznačně vede. Všem hercům jejich role padnou na míru."
     },
     {
       "date": "05.06.2024",
@@ -630,7 +630,7 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -644,7 +644,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 90,
       "comment": ""
     },
     {
@@ -658,7 +658,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -672,8 +672,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Nemůžu si pomoct, ale mě tohle prostě z nějakého důvodu skvěle sedlo. Chvílemi mi přišlo že koukám i na něco z Monty Pythons? Jakub Čermák není (nebyl) úplně mainstreamový režisér a tak byl tento jeho krok do klasického divadla očekávaně kontroverzní. Lidé co přišli zavzpomínat na \"Káju\" z toho oprávněně mohli být rozčarovaní. Já se bavil skvěle, písničky které vám evokují hity dávno minulé jsou chytlavé."
     },
     {
       "date": "18.06.2024",
@@ -686,7 +686,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -696,7 +696,7 @@
       "place": "Divadlo DISK",
       "city": "Praha",
       "host": false,
-      "removed": true,
+      "removed": false,
       "genres": [
         "činohra"
       ],
@@ -710,7 +710,7 @@
       "place": "Divadlo DISK",
       "city": "Praha",
       "host": false,
-      "removed": true,
+      "removed": false,
       "genres": [
         "činohra"
       ],
@@ -742,8 +742,8 @@
       "genres": [
         "barokní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Viděno na předpremiéře 13.7. na Valči. Velmi hutná, doslova fyzická hra. Smích přechází v mrazení, ale všechno perfektně funguje. Claudia předvádí neuvěřitelné proměny postav."
     },
     {
       "date": "16.07.2024",
@@ -756,7 +756,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -784,7 +784,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -798,8 +798,8 @@
       "genres": [
         "muzikál"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Viděno s Markem Adamczykem. Jeho dospělý Forman byl téměř perfektní. Celé představení skvělé odsýpá, jednoduchá schodišťová scéna dokázala dobře využít omezený prostor nádvoří. Musím hlavně ocenit mladé herce, kteří se bez problémů vyrovnali dospělým."
     },
     {
       "date": "03.09.2024",
@@ -812,7 +812,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -826,7 +826,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -840,8 +840,8 @@
       "genres": [
         "muzikál"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Chtěl bych vidět příště hru Vašek s Denisem v hlavní roli!!:) Hana Holišová Martu vystihla perfektně, včetně zpěvu."
     },
     {
       "date": "14.09.2024",
@@ -854,8 +854,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 100,
+      "comment": "Počin v Dlouhé nečekaný, i když jméno režiséra (Čermáka i Passoliniho) naznačovalo že nepůjde o standardní představení. V podstatě od vstupu Matyáše Řezníčka na scénu se to rozjede a nezastaví."
     },
     {
       "date": "16.09.2024",
@@ -882,7 +882,7 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -924,8 +924,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Dianiška opět nezklamal a dostali jsme nálož a perfektní jízdu od začátku do konce."
     },
     {
       "date": "26.09.2024",
@@ -952,8 +952,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Člověk se nemůže ubránit srovnání s filmem. Tím spíš že se jedná o převedení na scénu 1:1. Ale musím ocenit skvělou funkční scénu, která vás doslova vtáhne do děje (zvlášť pokud se nebojíte první řady). Daniel Bambas pojal postavu po svém, Antonie Talacková malinko hraje \"Bohdalku\". Nejvíc u mě vyhrál Maryškův \"milý\" estébák. Celkově tedy provedení výborné, ale nemůžu příliš přijít na důvod proč zrovna uvádět tuto hru v dnešní době bez nějaké byť mírné aktualizace."
     },
     {
       "date": "05.10.2024",
@@ -966,7 +966,7 @@
       "genres": [
         "komedie"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -980,7 +980,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -994,7 +994,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -1008,8 +1008,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "V první části hry jsem se celkem ztrácel, hlavně v množství postav, různých jmen a změn času. Bez předchozí znalosti díla je orientace skutečně složitější. Ale v druhé části pak vše do sebe pěkně zapadne. Skvělá Pavla Gajdošíková a Marie Málková."
     },
     {
       "date": "17.10.2024",
@@ -1022,7 +1022,7 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -1036,8 +1036,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Pro roli Orlanda nemohl být vybrán nikdo lepší než Vojta Franců. Sedí mu všechny polohy, pohlaví a jeho nohy mu můžou závidět opravdu všichni:) Skvělá minimalistická scéna a kostýmy"
     },
     {
       "date": "26.10.2024",
@@ -1092,7 +1092,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -1106,8 +1106,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Téma ne úplně pro mě, ale Karolína Knězů potvrdila že dokáže zahrát skvěle nejen komediální role."
     },
     {
       "date": "04.11.2024",
@@ -1120,7 +1120,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -1162,7 +1162,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -1176,7 +1176,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -1190,8 +1190,8 @@
       "genres": [
         "alternativa"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Stihli jsme ještě derniéru a jsem za to rád. Všichni šli s kůží na trh (doslova) a výsledek úžasný. Musím taky zmínit"
     },
     {
       "date": "18.11.2024",
@@ -1204,7 +1204,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -1218,8 +1218,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Anežka Kubátová je rozhodně na hodnocení za 100%! Inscenace i přes necelé dvě hodiny bez přestávky běží skvěle bez hluchých míst."
     },
     {
       "date": "22.11.2024",
@@ -1232,7 +1232,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 60,
       "comment": ""
     },
     {
@@ -1246,7 +1246,7 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -1260,8 +1260,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Na první pohled perfektní scéna, která ale od začátku působí něčím zvláštním. Postupně s dějem se přidávají drobné \"chyby v Matrixu\", opakující se vyprázdněné věty a scény. Až dojde prakticky k totální destrukci. Kdo aspoň někdy chvíli pracoval s \"ej áj\" musí mu být vše velmi povědomé. Stejné marné zápasy o vydolování smysluplné odpovědi. Ale pokud by měla mít Al tvář, tak rozhodně jako Anežka Kubátová. Nejvíc pobaví Kateřina Císařová a mistr různých podob Vojtěch Vondráček. Určitě stojí za zmínku i nový člen souboru David Petrželka."
     },
     {
       "date": "27.11.2024",
@@ -1274,7 +1274,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -1288,7 +1288,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -1313,7 +1313,9 @@
       "city": "Praha",
       "host": false,
       "removed": false,
-      "genres": [],
+      "genres": [
+        "činohra"
+      ],
       "rating": null,
       "comment": ""
     },
@@ -1325,7 +1327,9 @@
       "city": "Praha",
       "host": false,
       "removed": false,
-      "genres": [],
+      "genres": [
+        "alternativa"
+      ],
       "rating": null,
       "comment": ""
     },
@@ -1337,7 +1341,9 @@
       "city": "Praha",
       "host": false,
       "removed": false,
-      "genres": [],
+      "genres": [
+        "alternativa"
+      ],
       "rating": null,
       "comment": ""
     },
@@ -1349,7 +1355,9 @@
       "city": "Praha",
       "host": false,
       "removed": false,
-      "genres": [],
+      "genres": [
+        "činohra"
+      ],
       "rating": null,
       "comment": ""
     },
@@ -1361,7 +1369,9 @@
       "city": "Praha",
       "host": false,
       "removed": false,
-      "genres": [],
+      "genres": [
+        "činohra"
+      ],
       "rating": null,
       "comment": ""
     },
@@ -1387,7 +1397,9 @@
       "city": "Praha",
       "host": false,
       "removed": false,
-      "genres": [],
+      "genres": [
+        "činohra"
+      ],
       "rating": null,
       "comment": ""
     },
@@ -1399,7 +1411,9 @@
       "city": "Praha",
       "host": false,
       "removed": false,
-      "genres": [],
+      "genres": [
+        "činohra"
+      ],
       "rating": null,
       "comment": ""
     },
@@ -1411,7 +1425,9 @@
       "city": "České Budějovice",
       "host": false,
       "removed": false,
-      "genres": [],
+      "genres": [
+        "činohra"
+      ],
       "rating": null,
       "comment": ""
     },
