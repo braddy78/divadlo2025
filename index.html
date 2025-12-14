@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Braddyovic Divadelní Sezóna 2025</title>
+    <title>Braddyovic Divadelní Sezóna</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -221,16 +221,24 @@
 
 <div class="header-section text-center">
     <div class="container">
-        <h1 class="glitch-text">Braddyovic Divadelní Sezóna 2025</h1>
+        <h1 class="glitch-text" id="mainTitle">Braddyovic Divadelní Sezóna 2025</h1>
+
+        <div class="btn-group my-3" role="group" aria-label="Výběr sezóny">
+            <input type="radio" class="btn-check" name="seasonYear" id="year2024" autocomplete="off" onchange="changeYear(2024)">
+            <label class="btn btn-outline-secondary" for="year2024">Sezóna 2024</label>
+
+            <input type="radio" class="btn-check" name="seasonYear" id="year2025" autocomplete="off" checked onchange="changeYear(2025)">
+            <label class="btn btn-outline-info" for="year2025">Sezóna 2025</label>
+        </div>
+
         <p class="lead text-muted mt-2" style="color: var(--accent-cyan) !important;">
-            Dramaturgický profil 2025: Audit shlédnutých titulů, souborů a regionálních výjezdů.
+            Dramaturgický profil: Audit shlédnutých titulů, souborů a regionálních výjezdů.
         </p>
     </div>
 </div>
 
 <div class="container">
 
-    <!-- 6 TOP STATS -->
     <div class="row mb-4 g-3">
         <div class="col-6 col-md-4">
             <div class="stats-card">
@@ -278,7 +286,6 @@
         </div>
     </div>
 
-    <!-- Charts row 1 -->
     <div class="row">
         <div class="col-lg-8">
             <div class="chart-card">
@@ -300,7 +307,6 @@
         </div>
     </div>
 
-    <!-- Charts row 2 -->
     <div class="row">
         <div class="col-lg-4">
             <div class="chart-card">
@@ -322,7 +328,6 @@
         </div>
     </div>
 
-    <!-- Filters + Table -->
     <div class="row" id="dataSection">
         <div class="col-12">
             <div class="filter-bar">
@@ -388,8 +393,9 @@
 </div>
 
 <script>
-/* --- 1. DATASET --- */
+/* --- 1. DATASET & KONFIGURACE --- */
 let shows = [];
+let currentSeasonYear = 2025; // Výchozí rok
 
 /* --- 2. LOGIKA & ZPRACOVÁNÍ --- */
 Chart.defaults.font.family = "'Segoe UI', sans-serif";
@@ -402,6 +408,29 @@ let filters = { title: "", theatre: "", city: "", genre: "", month: "" };
 
 // pro správné klikání v geo grafu (NEpoužíváme label)
 let locationKeys = [];
+
+// Funkce pro přepínání roku
+function changeYear(year) {
+    currentSeasonYear = year;
+    
+    // Změna nadpisu
+    document.getElementById('mainTitle').innerText = `Braddyovic Divadelní Sezóna ${year}`;
+    
+    // Styling tlačítek
+    if(year === 2025) {
+        document.querySelector('label[for="year2025"]').className = 'btn btn-outline-info';
+        document.querySelector('label[for="year2024"]').className = 'btn btn-outline-secondary';
+    } else {
+        document.querySelector('label[for="year2025"]').className = 'btn btn-outline-secondary';
+        document.querySelector('label[for="year2024"]').className = 'btn btn-outline-info';
+    }
+
+    // Reset filtrů při změně roku (např. měsíc 12 může být prázdný v novém roce)
+    resetFilters();
+
+    // Přenačtení a přefiltrování dat
+    initData();
+}
 
 async function loadShows() {
     const url = new URL('data/shows.json', window.location.href).toString();
@@ -498,10 +527,21 @@ function getCanonical_(row) {
 }
 
 async function initData() {
-    await loadShows();
+    // Načteme data ze serveru pouze pokud je pole prázdné
+    if (shows.length === 0) {
+        await loadShows();
+    }
 
+    // Zpracování + filtrace podle roku (currentSeasonYear)
     processedData = (shows || []).map((s, idx) => {
         const dateObj = parseDate(s.date);
+        
+        // Validace data
+        if (!dateObj || isNaN(dateObj.getTime())) return null;
+
+        // FILTR ROKU: Pokud rok nesedí, vrátíme null a následně odfiltrujeme
+        if (dateObj.getFullYear() !== currentSeasonYear) return null;
+
         const genresArr = Array.isArray(s.genres) ? s.genres : (s.genre ? [s.genre] : []);
         const cleanGenres = genresArr.map(g => String(g || '').trim()).filter(Boolean);
         const primaryGenre = cleanGenres[0] || '';
@@ -525,19 +565,30 @@ async function initData() {
             monthIdx: dateObj.getMonth(),
             dayIdx: dateObj.getDay()
         };
-    });
+    }).filter(item => item !== null); // Odstraníme položky z jiných let
 
     rebuildCanonicalMap_();
     populateSelects();
-    updateDashboard();
+    // Aplikace filtrů a vykreslení (použije aktuální hodnoty dropdownů, které jsou po resetu prázdné)
+    applyFilters(); 
 }
 
 function populateSelects() {
     const getUnique = (key) => [...new Set(processedData.map(d => d[key]).filter(Boolean))].sort();
 
     const theatreSel = document.getElementById('filterTheatre');
+    // Uložíme si aktuální výběr, kdyby náhodou zůstal, ale u changeYear děláme reset
+    const currentVal = theatreSel.value;
+    
     theatreSel.length = 1;
     getUnique('theatre').forEach(t => theatreSel.add(new Option(t, t)));
+    
+    // Pokud je stará hodnota v novém seznamu, necháme ji (užitečné při reloadu, ne při změně roku)
+    if ([...theatreSel.options].some(o => o.value === currentVal)) {
+        theatreSel.value = currentVal;
+    } else {
+        theatreSel.value = "";
+    }
 
     const citySel = document.getElementById('filterCity');
     citySel.length = 1;
@@ -913,7 +964,6 @@ document.getElementById('toggleNoPrague')?.addEventListener('change', () => {
 initData().catch(console.error);
 </script>
 
-<!-- Comment Modal -->
 <div class="modal fade" id="commentModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content" style="background: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-main);">
