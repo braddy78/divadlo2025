@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Braddyovic Divadelní Sezóna</title>
+    <title>Braddyovic Divadelní Sezóna 2025</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -214,6 +214,22 @@
         ::-webkit-scrollbar-track { background: var(--bg-dark); }
         ::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: var(--accent-cyan); }
+
+        /* Year toggle */
+        .year-btn.active {
+            background: rgba(6,182,212,0.16) !important;
+            border-color: rgba(6,182,212,0.75) !important;
+            color: #ffffff !important;
+            box-shadow: 0 0 0 3px rgba(6,182,212,0.10);
+        }
+        .year-indicator {
+            color: rgba(228,228,231,0.70);
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            font-size: 0.78rem;
+            user-select: none;
+        }
+
     </style>
 </head>
 
@@ -221,24 +237,23 @@
 
 <div class="header-section text-center">
     <div class="container">
-        <h1 class="glitch-text" id="mainTitle">Braddyovic Divadelní Sezóna 2025</h1>
-
-        <div class="btn-group my-3" role="group" aria-label="Výběr sezóny">
-            <input type="radio" class="btn-check" name="seasonYear" id="year2024" autocomplete="off" onchange="changeYear(2024)">
-            <label class="btn btn-outline-secondary" for="year2024">Sezóna 2024</label>
-
-            <input type="radio" class="btn-check" name="seasonYear" id="year2025" autocomplete="off" checked onchange="changeYear(2025)">
-            <label class="btn btn-outline-info" for="year2025">Sezóna 2025</label>
-        </div>
-
+        <h1 class="glitch-text">Braddyovic Divadelní Sezóna 2025</h1>
         <p class="lead text-muted mt-2" style="color: var(--accent-cyan) !important;">
-            Dramaturgický profil: Audit shlédnutých titulů, souborů a regionálních výjezdů.
+            Dramaturgický profil 2025: Audit shlédnutých titulů, souborů a regionálních výjezdů.
         </p>
     </div>
 </div>
 
 <div class="container">
 
+    <!-- Year toggle -->
+    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+        <div class="year-indicator" id="yearIndicator">Rok: —</div>
+        <div class="btn-group" id="yearButtons" role="group" aria-label="Rok"></div>
+    </div>
+
+
+    <!-- 6 TOP STATS -->
     <div class="row mb-4 g-3">
         <div class="col-6 col-md-4">
             <div class="stats-card">
@@ -286,6 +301,7 @@
         </div>
     </div>
 
+    <!-- Charts row 1 -->
     <div class="row">
         <div class="col-lg-8">
             <div class="chart-card">
@@ -307,6 +323,7 @@
         </div>
     </div>
 
+    <!-- Charts row 2 -->
     <div class="row">
         <div class="col-lg-4">
             <div class="chart-card">
@@ -328,6 +345,7 @@
         </div>
     </div>
 
+    <!-- Filters + Table -->
     <div class="row" id="dataSection">
         <div class="col-12">
             <div class="filter-bar">
@@ -393,9 +411,8 @@
 </div>
 
 <script>
-/* --- 1. DATASET & KONFIGURACE --- */
+/* --- 1. DATASET --- */
 let shows = [];
-let currentSeasonYear = 2025; // Výchozí rok
 
 /* --- 2. LOGIKA & ZPRACOVÁNÍ --- */
 Chart.defaults.font.family = "'Segoe UI', sans-serif";
@@ -406,31 +423,100 @@ const months = ["Leden","Únor","Březen","Duben","Květen","Červen","Červenec
 
 let filters = { title: "", theatre: "", city: "", genre: "", month: "" };
 
-// pro správné klikání v geo grafu (NEpoužíváme label)
-let locationKeys = [];
 
-// Funkce pro přepínání roku
-function changeYear(year) {
-    currentSeasonYear = year;
-    
-    // Změna nadpisu
-    document.getElementById('mainTitle').innerText = `Braddyovic Divadelní Sezóna ${year}`;
-    
-    // Styling tlačítek
-    if(year === 2025) {
-        document.querySelector('label[for="year2025"]').className = 'btn btn-outline-info';
-        document.querySelector('label[for="year2024"]').className = 'btn btn-outline-secondary';
-    } else {
-        document.querySelector('label[for="year2025"]').className = 'btn btn-outline-secondary';
-        document.querySelector('label[for="year2024"]').className = 'btn btn-outline-info';
+// === Year filter (data obsahuje 2024+2025) ===
+let yearFilter = null;              // null = vše
+let availableYears = [];
+function yearOf_(row){ return row.date.getFullYear(); }
+
+function initYearControls_(){
+    const el = document.getElementById('yearButtons');
+    const ind = document.getElementById('yearIndicator');
+
+    availableYears = [...new Set(source.map(yearOf_))].sort((a,b)=>b-a);
+
+    // default = nejvyšší rok v datech (typicky 2025)
+    if (yearFilter === null && availableYears.length) {
+        yearFilter = availableYears[0];
     }
 
-    // Reset filtrů při změně roku (např. měsíc 12 může být prázdný v novém roce)
-    resetFilters();
+    if (!el) return;
 
-    // Přenačtení a přefiltrování dat
-    initData();
+    el.innerHTML = '';
+
+    // tlačítko "Vše"
+    const btnAll = document.createElement('button');
+    btnAll.type = 'button';
+    btnAll.className = 'btn btn-outline-info year-btn';
+    btnAll.textContent = 'Vše';
+    btnAll.addEventListener('click', () => setYearFilter_(null));
+    el.appendChild(btnAll);
+
+    // tlačítka pro roky
+    for (const y of availableYears) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'btn btn-outline-info year-btn';
+        b.textContent = String(y);
+        b.addEventListener('click', () => setYearFilter_(y));
+        el.appendChild(b);
+    }
+
+    updateYearUI_();
+    if (ind) ind.textContent = `Rok: ${yearFilter ?? 'Vše'}`;
 }
+
+function updateYearUI_(){
+    const el = document.getElementById('yearButtons');
+    const ind = document.getElementById('yearIndicator');
+    if (!el) return;
+
+    const buttons = Array.from(el.querySelectorAll('button.year-btn'));
+    buttons.forEach(btn => {
+        const t = btn.textContent.trim();
+        const isAll = (t === 'Vše');
+        const isActive = (isAll && yearFilter === null) || (!isAll && Number(t) === yearFilter);
+        btn.classList.toggle('active', isActive);
+    });
+
+    if (ind) ind.textContent = `Rok: ${yearFilter ?? 'Vše'}`;
+}
+
+function refreshSelectsForYear_(){
+    // přepočítáme dropdowny jen z dat aktuálního roku (aby to nebyl chaos)
+    const base = getYearBase_();
+
+    const prevTheatre = document.getElementById('filterTheatre').value;
+    const prevCity = document.getElementById('filterCity').value;
+    const prevGenre = document.getElementById('filterGenre').value;
+
+    populateSelects(base);
+
+    // pokus o zachování předchozí volby; pokud neexistuje, spadne na "Vše"
+    const theatreSel = document.getElementById('filterTheatre');
+    const citySel = document.getElementById('filterCity');
+    const genreSel = document.getElementById('filterGenre');
+
+    if (Array.from(theatreSel.options).some(o => o.value === prevTheatre)) theatreSel.value = prevTheatre;
+    if (Array.from(citySel.options).some(o => o.value === prevCity)) citySel.value = prevCity;
+    if (Array.from(genreSel.options).some(o => o.value === prevGenre)) genreSel.value = prevGenre;
+}
+
+function setYearFilter_(y){
+    yearFilter = (y === null) ? null : Number(y);
+    updateYearUI_();
+    refreshSelectsForYear_();
+    applyFilters();
+}
+
+function getYearBase_(){
+    return processedData.filter(d => yearFilter === null || yearOf_(d) === yearFilter);
+}
+
+
+
+// pro správné klikání v geo grafu (NEpoužíváme label)
+let locationKeys = [];
 
 async function loadShows() {
     const url = new URL('data/shows.json', window.location.href).toString();
@@ -498,11 +584,11 @@ function keyOf_(d) {
   return `${normKeyPart_(d.title)}|||${normKeyPart_(d.theatre)}`;
 }
 
-function rebuildCanonicalMap_() {
+function rebuildCanonicalMapFor_(rows) {
   // Kanonický = nejnovější záznam s ratingem / komentářem
   canonicalByKey = new Map();
 
-  const sorted = [...processedData].sort((a, b) => a.date - b.date);
+  const sorted = [...rows].sort((a, b) => a.date - b.date);
 
   for (const d of sorted) {
     const k = keyOf_(d);
@@ -527,21 +613,10 @@ function getCanonical_(row) {
 }
 
 async function initData() {
-    // Načteme data ze serveru pouze pokud je pole prázdné
-    if (shows.length === 0) {
-        await loadShows();
-    }
+    await loadShows();
 
-    // Zpracování + filtrace podle roku (currentSeasonYear)
     processedData = (shows || []).map((s, idx) => {
         const dateObj = parseDate(s.date);
-        
-        // Validace data
-        if (!dateObj || isNaN(dateObj.getTime())) return null;
-
-        // FILTR ROKU: Pokud rok nesedí, vrátíme null a následně odfiltrujeme
-        if (dateObj.getFullYear() !== currentSeasonYear) return null;
-
         const genresArr = Array.isArray(s.genres) ? s.genres : (s.genre ? [s.genre] : []);
         const cleanGenres = genresArr.map(g => String(g || '').trim()).filter(Boolean);
         const primaryGenre = cleanGenres[0] || '';
@@ -565,36 +640,26 @@ async function initData() {
             monthIdx: dateObj.getMonth(),
             dayIdx: dateObj.getDay()
         };
-    }).filter(item => item !== null); // Odstraníme položky z jiných let
+    });
 
-    rebuildCanonicalMap_();
-    populateSelects();
-    // Aplikace filtrů a vykreslení (použije aktuální hodnoty dropdownů, které jsou po resetu prázdné)
-    applyFilters(); 
+    rebuildCanonicalMapFor_(processedData);
+    initYearControls_();
+    refreshSelectsForYear_();
+    updateDashboard();
 }
 
-function populateSelects() {
-    const getUnique = (key) => [...new Set(processedData.map(d => d[key]).filter(Boolean))].sort();
+function populateSelects(source = processedData) {
+    const getUnique = (key) => [...new Set(source.map(d => d[key]).filter(Boolean))].sort();
 
     const theatreSel = document.getElementById('filterTheatre');
-    // Uložíme si aktuální výběr, kdyby náhodou zůstal, ale u changeYear děláme reset
-    const currentVal = theatreSel.value;
-    
     theatreSel.length = 1;
     getUnique('theatre').forEach(t => theatreSel.add(new Option(t, t)));
-    
-    // Pokud je stará hodnota v novém seznamu, necháme ji (užitečné při reloadu, ne při změně roku)
-    if ([...theatreSel.options].some(o => o.value === currentVal)) {
-        theatreSel.value = currentVal;
-    } else {
-        theatreSel.value = "";
-    }
 
     const citySel = document.getElementById('filterCity');
     citySel.length = 1;
     getUnique('city').forEach(c => citySel.add(new Option(c, c)));
 
-    const allGenres = [...new Set(processedData.flatMap(d => d.genres || []))].sort();
+    const allGenres = [...new Set(source.flatMap(d => d.genres || []))].sort();
     const genreSel = document.getElementById('filterGenre');
     genreSel.length = 1;
     allGenres.forEach(g => genreSel.add(new Option(g, g)));
@@ -602,7 +667,12 @@ function populateSelects() {
 
 /* --- 3. RENDEROVÁNÍ --- */
 function updateDashboard() {
-    const filtered = processedData.filter(d => {
+    const yearBase = getYearBase_();
+
+    // canonical rating/comment se vždy staví jen z aktuálního roku
+    rebuildCanonicalMapFor_(yearBase);
+
+    const filtered = yearBase.filter(d => {
         const mMatch = filters.month === "" || d.monthIdx == filters.month;
         const tMatch = d.title.toLowerCase().includes(filters.title.toLowerCase());
         const thMatch = filters.theatre === "" || d.theatre === filters.theatre;
@@ -964,6 +1034,7 @@ document.getElementById('toggleNoPrague')?.addEventListener('change', () => {
 initData().catch(console.error);
 </script>
 
+<!-- Comment Modal -->
 <div class="modal fade" id="commentModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content" style="background: var(--card-bg); border: 1px solid var(--border-color); color: var(--text-main);">
