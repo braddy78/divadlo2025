@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-14T22:31:46.540Z",
+  "generatedAt": "2025-12-16T21:49:12.666Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -3556,8 +3556,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Asi zatím nejlepší vánoční divadelní představení! Je to tak akorát vyvážené mezi vánoční klasikou (koledy, Ježíšek) a vtipnou komedií. Všichni skvěle zpívají, hudební doprovod Zdeňka Dočekala na různé hudební nástroje to jen skvěle podtrhuje. Určitě na to vemte celou rodinu, před Vánoci to zahřeje na duši!"
     },
     {
       "date": "17.12.2025",
