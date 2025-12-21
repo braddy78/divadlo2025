@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-16T21:49:12.666Z",
+  "generatedAt": "2025-12-21T11:22:18.242Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -2702,8 +2702,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Vtipná, hravá, hudební jednohubka"
     },
     {
       "date": "12.08.2025",
@@ -2716,8 +2716,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Je to prča! Prostě skvělá malá letní věc, která má za cíl vás pobavit. A to se jim daří!"
     },
     {
       "date": "20.08.2025",
@@ -2758,8 +2758,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Martin Pechlát prostě JE Casanova. Prakticky nemám co vytknout, snad jen že by klidně na jevišti mohl být sám a nepochybně by utáhl celé představení i bez menší role Lucie Trmíkové."
     },
     {
       "date": "22.08.2025",
@@ -2870,7 +2870,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -2940,8 +2940,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Hra mi trochu připomněla hru Perplex od Mariuse von Mayenburga (kterou Tomáš Ráliš režíroval v DISKu). Skvělá hra se slovy a s prostorem. Oceňuji zejména skvělé výkony Natálie Holíkové a Petra Kulta."
     },
     {
       "date": "29.09.2025",
@@ -2968,7 +2968,7 @@
       "genres": [
         "studentské"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -3010,8 +3010,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Jsem rád, že D21 přibližuje klasiku i mladšímu publiku stravitelnou formou. A vlastně i mě (i když už nejsem nejmladší), ale pořád radši půjdu na aktualizovanou a moderně pojatou věc, než někde usínat u 4-hodinového klasického zpracování."
     },
     {
       "date": "10.10.2025",
@@ -3052,7 +3052,7 @@
       "genres": [
         "muzikál"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -3136,7 +3136,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 80,
       "comment": ""
     },
     {
@@ -3178,7 +3178,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -3221,7 +3221,7 @@
         "činohra"
       ],
       "rating": null,
-      "comment": ""
+      "comment": "Zatím si nechávám hodnocení na reprízu..."
     },
     {
       "date": "03.11.2025",
@@ -3290,8 +3290,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 90,
+      "comment": "Takhle se za mě má dělat moderní divadlo! Klobouček před jihlavským divadlem, že se nebálo jít do takové náročné látky a do spolupráce s Jakubem Čermákem. Výsledek za to stojí. A to že se povedlo do představení vměstnat praktický celého Fausta je už jen bonbónek, který je sice v druhé půli pro leckoho těžko \"cucatelný\", ale vizuálně na vás prostě působí tak jako málo co."
     },
     {
       "date": "13.11.2025",
@@ -3304,8 +3304,8 @@
       "genres": [
         "barokní"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 80,
+      "comment": "Vtipné (dvojnásobně) představení, které určitě doporučuji pro seznámení se souborem Geisslers Hofcomoedianten. Je to vlastně hodně starý, jednoduchý, ale osvědčený příběh divadla na divadle."
     },
     {
       "date": "14.11.2025",
@@ -3332,8 +3332,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 100,
+      "comment": "Počin v Dlouhé nečekaný, i když jméno režiséra (Čermáka i Passoliniho) naznačovalo že nepůjde o standardní představení. V podstatě od vstupu Matyáše Řezníčka na scénu se to rozjede a nezastaví."
     },
     {
       "date": "19.11.2025",
@@ -3346,7 +3346,7 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
+      "rating": 70,
       "comment": ""
     },
     {
@@ -3360,8 +3360,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 40,
+      "comment": "Vždy se snažím najít na každém představení to pozitivní. Tady to jsou výkony mladé generace (Knězů,Beleš,Cibulka) kteří se snaží přinést do inscenace \"mladý, svěží vítr\" - řečeno s Cimrmany. A také výkon Jiřího Maryška coby patrona Fortunata vyčníval nad průměr. Což se jinak nedá říct o celé inscenaci, která si jede ve svých letitých zajetých kolejích a absolutně ničím vás nezaujme."
     },
     {
       "date": "25.11.2025",
@@ -3375,7 +3375,7 @@
         "činohra"
       ],
       "rating": 100,
-      "comment": ""
+      "comment": "Za mě letošní TOP představení sezóny! Tady je prostě všechno správně, jak úžasná ústřední dvojice K.Baranová a F.Jáša, mezi kterou to fantasticky jiskří, tak ostatní postavy, hudba a i ta často v jiných hrách kritizovaná nahota sem prostě sedne perfektně. Je to jízda a masakr od začátku do konce a tohle se musí vidět víckrát! A jsem moc rád, že se i mimo Prahu dělá skvělé divadlo."
     },
     {
       "date": "26.11.2025",
@@ -3388,8 +3388,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Pořád se nemůžu rozhodnout, jestli se mi to vlastně líbilo, nebo ne. Ale ono se to vlastně nemá líbit...tak jak to uchopit? Román i film jsou z mého pohledu na divadle neinscenovatelné. Ale přesto se to povedlo. Obsazení Anny Kameníkové do hlavní role byl podle mě dobrý krok a já jsem jí toho malého kluka věřil. Musím taky zmínit Davida Petrželku za jeho fašounka a Vojtěcha Vondráčka za roli paní učitelky a kabaretiéra."
     },
     {
       "date": "30.11.2025",
@@ -3402,8 +3402,8 @@
       "genres": [
         "muzikál"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 60,
+      "comment": "65+ Jak jsem psal již jinde, nejsem příliš fanoušek do muzikálů obecně, ale téma příběhu mě zaujalo. Určitě mi k rozklíčování hry pomohl i dramaturgický úvod. Přesto jsem se v ději trochu ztrácel. Ale to všechno přebila pozitivně hudební část s živým orchestrem na jevišti (super!) a hlavně pro mě wow herecký/pěvecký výkon Daniely Špinar."
     },
     {
       "date": "01.12.2025",
@@ -3472,8 +3472,8 @@
       "genres": [
         "alternativní"
       ],
-      "rating": 80,
-      "comment": ""
+      "rating": 90,
+      "comment": "Máte rádi štrůdl? Nejlíp takhle o polednách, kdy se nemůže nikdo před ničím schovat a vyjdou na něj pak najevo všechny jeho tajemství. Jakub Čermák mi opět potvrdil, že jeho hry jsou prostě z jiného světa, ale pro mě skvělé. Skvělý výkon Zuzany Bydžovské, kterou byste vlastně chtěli litovat, kdyby nehrála takovou s... A již tradičně vtipní Ivana Uhlířová s Miloslavem Königem rozehráli vtipnou ale mrazivou podívanou."
     },
     {
       "date": "08.12.2025",
@@ -3515,7 +3515,7 @@
         "činohra"
       ],
       "rating": 70,
-      "comment": ""
+      "comment": "Osobně mi víc sedla druhá část hry, která je přímo o Naně a Karolína Knězů opět dokázala, že jí tento typ ženských vyvrhelek sedí. První část o \"zabijákovi\" má výrazné postavy v Ivaně Uhlířové a Aleši Bilíkovi a zasáhne vás sice očekávaným vývojem alkoholové story, ale pro mě vždy osobně nepochopitelným a zničujícím. Musím zmínit také Denisu Čapkovou, která si dokázala se svojí malou rolí ukrást mou velkou pozornost."
     },
     {
       "date": "14.12.2025",
@@ -3584,8 +3584,8 @@
       "genres": [
         "činohra"
       ],
-      "rating": null,
-      "comment": ""
+      "rating": 70,
+      "comment": "Film jsem viděl kdysi dávno a ještě vlastně ne celý, takže nemusím srovnávat. Šimon Krupa byl na roli falešného faráře skvělá volba a i já bych se k němu šel hned vyzpovídat. Taky oceňuji, že postava učitele (I.Orozovič) není vlastně apriori negativní. Ostatní místní postavy jsou pochopitelně trochu zjednodušené, ale třeba babička nebo Anka s Toníkem jsou vyseknuté perfektně. Bohužel první část představení se trochu vleče a nezachránil to ani fotbálek na jevišti. Naštěstí druhá část to vylepšila a scéna svatby nebo závěr hry jsou vrcholy inscenace."
     },
     {
       "date": "21.12.2025",
