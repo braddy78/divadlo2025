@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2025-12-22T19:27:13.868Z",
+  "generatedAt": "2025-12-22T22:25:43.937Z",
   "source": "data/shows.csv",
   "shows": [
     {
@@ -18,7 +18,35 @@
       "comment": ""
     },
     {
+      "date": "12.01.2024",
+      "title": "Vysoká hra",
+      "theatre": "Spolek JEDL",
+      "place": "Solná věž",
+      "city": "Praha",
+      "host": false,
+      "removed": true,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
       "date": "14.01.2024",
+      "title": "Nejbližší",
+      "theatre": "Činoherní klub",
+      "place": "Činoherní klub",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "18.01.2024",
       "title": "Bílá nemoc",
       "theatre": "Městská divadla pražská",
       "place": "Divadlo ABC",
@@ -29,6 +57,20 @@
         "činohra"
       ],
       "rating": 60,
+      "comment": ""
+    },
+    {
+      "date": "21.01.2024",
+      "title": "Pudl a pudr",
+      "theatre": "Geisslers Hofcomoedianten",
+      "place": "Divadlo VILA Štvanice",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "barokní"
+      ],
+      "rating": null,
       "comment": ""
     },
     {
@@ -102,6 +144,20 @@
       "comment": ""
     },
     {
+      "date": "30.01.2024",
+      "title": "Osvobozené divadlo Semafor",
+      "theatre": "Divadlo Semafor",
+      "place": "Divadlo Semafor",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "hudební"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
       "date": "01.02.2024",
       "title": "Podivné odpoledne dr. Zvonka Burkeho",
       "theatre": "Činoherní klub",
@@ -113,6 +169,34 @@
         "činohra"
       ],
       "rating": 60,
+      "comment": ""
+    },
+    {
+      "date": "07.02.2024",
+      "title": "Iluze",
+      "theatre": "DAMU",
+      "place": "K222",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "08.02.2024",
+      "title": "Dobře placená procházka",
+      "theatre": "Divadlo Semafor",
+      "place": "Divadlo Semafor",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "hudební"
+      ],
+      "rating": null,
       "comment": ""
     },
     {
@@ -155,6 +239,34 @@
         "činohra"
       ],
       "rating": 70,
+      "comment": ""
+    },
+    {
+      "date": "19.02.2024",
+      "title": "Burian",
+      "theatre": "Divadlo F.X. Šaldy",
+      "place": "Divadlo Pod Palmovkou",
+      "city": "Praha",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": 80,
+      "comment": ""
+    },
+    {
+      "date": "21.02.2024",
+      "title": "Gazdina Roba",
+      "theatre": "Divadlo F.X. Šaldy",
+      "place": "Divadlo F.X. Šaldy",
+      "city": "Liberec",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": 80,
       "comment": ""
     },
     {
@@ -298,6 +410,20 @@
       "comment": "Vcelku průměrná hra, kterou zachraňují jen výkony Miroslava Hanuše, Martina Donutila a Dany Batulkové."
     },
     {
+      "date": "22.03.2024",
+      "title": "Mnoho povyku pro nic",
+      "theatre": "Národní divadlo",
+      "place": "Stavovské divadlo",
+      "city": "Praha",
+      "host": false,
+      "removed": true,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
       "date": "23.03.2024",
       "title": "Edvard II.",
       "theatre": "Depresivní děti touží po penězích",
@@ -321,6 +447,20 @@
       "removed": false,
       "genres": [
         "alternativa"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "25.03.2024",
+      "title": "Bez roucha",
+      "theatre": "Divadlo v Dlouhé",
+      "place": "Divadlo v Dlouhé",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
       ],
       "rating": null,
       "comment": ""
@@ -354,20 +494,6 @@
       "comment": "65% za obě dámy v hlavních rolích."
     },
     {
-      "date": "01.04.2024",
-      "title": "Casanova",
-      "theatre": "Spolek JEDL",
-      "place": "Divadlo Rokoko",
-      "city": "Praha",
-      "host": true,
-      "removed": false,
-      "genres": [
-        "činohra"
-      ],
-      "rating": 90,
-      "comment": "Martin Pechlát prostě JE Casanova. Prakticky nemám co vytknout, snad jen že by klidně na jevišti mohl být sám a nepochybně by utáhl celé představení i bez menší role Lucie Trmíkové."
-    },
-    {
       "date": "02.04.2024",
       "title": "Drým Džurny",
       "theatre": "Ductus Deferens",
@@ -382,7 +508,7 @@
       "comment": "Vtipná, hravá, hudební jednohubka"
     },
     {
-      "date": "04.04.2024",
+      "date": "03.04.2024",
       "title": "Cesta dlouhým dnem do noci",
       "theatre": "Divadlo v Dlouhé",
       "place": "Divadlo v Dlouhé",
@@ -408,6 +534,20 @@
       ],
       "rating": null,
       "comment": ""
+    },
+    {
+      "date": "06.04.2024",
+      "title": "Casanova",
+      "theatre": "Spolek JEDL",
+      "place": "Divadlo Rokoko",
+      "city": "Praha",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": 90,
+      "comment": "Martin Pechlát prostě JE Casanova. Prakticky nemám co vytknout, snad jen že by klidně na jevišti mohl být sám a nepochybně by utáhl celé představení i bez menší role Lucie Trmíkové."
     },
     {
       "date": "07.04.2024",
@@ -497,7 +637,35 @@
       "date": "23.04.2024",
       "title": "Pešková",
       "theatre": "Švandovo divadlo",
-      "place": "Tvůrčí dům Elišky Peškové",
+      "place": "Peškovka",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": 80,
+      "comment": ""
+    },
+    {
+      "date": "24.04.2024",
+      "title": "Pravomil",
+      "theatre": "Divadlo v Dlouhé",
+      "place": "Divadlo v Dlouhé",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "17.05.2024",
+      "title": "Hodina diplomacie",
+      "theatre": "Divadlo Viola",
+      "place": "Divadlo Viola",
       "city": "Praha",
       "host": false,
       "removed": false,
@@ -522,6 +690,34 @@
       "comment": ""
     },
     {
+      "date": "21.05.2024",
+      "title": "U snědeného krámu",
+      "theatre": "Komorní scéna Aréna",
+      "place": "Komorní scéna Aréna",
+      "city": "Ostrava",
+      "host": false,
+      "removed": true,
+      "genres": [
+        "činohra"
+      ],
+      "rating": 80,
+      "comment": ""
+    },
+    {
+      "date": "25.05.2024",
+      "title": "Kalavečer Kalambúr: GalaKala XV",
+      "theatre": "Cabaret Calembour",
+      "place": "Divadlo pod Palmovkou",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "kabaret"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
       "date": "29.05.2024",
       "title": "Filoktétés. Last minute",
       "theatre": "Divadlo X10",
@@ -531,6 +727,20 @@
       "removed": false,
       "genres": [
         "alternativa"
+      ],
+      "rating": 70,
+      "comment": ""
+    },
+    {
+      "date": "30.05.2024",
+      "title": "Tanec smrti",
+      "theatre": "Geisslers Hofcomoedianten",
+      "place": "Malostranský hřbitov",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "site specific"
       ],
       "rating": 70,
       "comment": ""
@@ -547,6 +757,20 @@
         "činohra"
       ],
       "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "01.06.2024",
+      "title": "Hamlet",
+      "theatre": "Divadlo Petra Bezruče",
+      "place": "Divadlo pod Palmovkou",
+      "city": "Praha",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": 70,
       "comment": ""
     },
     {
@@ -611,7 +835,7 @@
       "theatre": "Cabaret Calembour",
       "place": "Studio Ypsilon",
       "city": "Praha",
-      "host": true,
+      "host": false,
       "removed": false,
       "genres": [
         "kabaret"
@@ -625,7 +849,7 @@
       "theatre": "Ductus Deferens",
       "place": "Švandovo divadlo (Studio)",
       "city": "Praha",
-      "host": true,
+      "host": false,
       "removed": false,
       "genres": [
         "alternativa"
@@ -634,31 +858,45 @@
       "comment": ""
     },
     {
-      "date": "14.06.2024",
-      "title": "Vykouření",
-      "theatre": "Husa na provázku",
-      "place": "Divadlo Archa",
+      "date": "13.06.2024",
+      "title": "Obyčejná žena",
+      "theatre": "MeetFactory",
+      "place": "MeetFactory",
       "city": "Praha",
-      "host": true,
+      "host": false,
       "removed": false,
       "genres": [
-        "činohra"
+        "alternativa"
       ],
-      "rating": 90,
+      "rating": null,
       "comment": ""
     },
     {
-      "date": "15.06.2024",
+      "date": "14.06.2024",
       "title": "Naši",
       "theatre": "HaDivadlo",
-      "place": "Divadlo Archa",
-      "city": "Praha",
-      "host": true,
+      "place": "HaDivadlo",
+      "city": "Brno",
+      "host": false,
       "removed": false,
       "genres": [
         "činohra"
       ],
       "rating": 70,
+      "comment": ""
+    },
+    {
+      "date": "15.06.2024",
+      "title": "Vykouření",
+      "theatre": "Husa na provázku",
+      "place": "Husa na provázku",
+      "city": "Brno",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": 90,
       "comment": ""
     },
     {
@@ -704,6 +942,20 @@
       "comment": ""
     },
     {
+      "date": "21.06.2024",
+      "title": "S čerty nejsou žerty",
+      "theatre": "Východočeské divadlo Pardubice",
+      "place": "Kunětická Hora",
+      "city": "Kunětická hora",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
       "date": "23.06.2024",
       "title": "Marná lásky snaha",
       "theatre": "DAMU",
@@ -732,6 +984,20 @@
       "comment": ""
     },
     {
+      "date": "26.06.2024",
+      "title": "Česká kletba",
+      "theatre": "Divadlo Mír",
+      "place": "Divadlo Na Fidlovačce",
+      "city": "Praha",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "komedie"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
       "date": "13.07.2024",
       "title": "Horri-bili-cribri-fax",
       "theatre": "Geisslers Hofcomoedianten",
@@ -747,7 +1013,7 @@
     },
     {
       "date": "16.07.2024",
-      "title": "Marná lásky snaha",
+      "title": "Marná Lásky snaha",
       "theatre": "Letní shakespearovské slavnosti",
       "place": "Nejvyšší purkrabství Pražského hradu",
       "city": "Praha",
@@ -788,6 +1054,20 @@
       "comment": ""
     },
     {
+      "date": "31.07.2024",
+      "title": "Všechno a nic",
+      "theatre": "Ductus Deferens",
+      "place": "Přístav Praha",
+      "city": "Praha",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
       "date": "03.08.2024",
       "title": "Forman",
       "theatre": "Letní scéna Musea Kampa",
@@ -800,6 +1080,62 @@
       ],
       "rating": 70,
       "comment": "Viděno s Markem Adamczykem. Jeho dospělý Forman byl téměř perfektní. Celé představení skvělé odsýpá, jednoduchá schodišťová scéna dokázala dobře využít omezený prostor nádvoří. Musím hlavně ocenit mladé herce, kteří se bez problémů vyrovnali dospělým."
+    },
+    {
+      "date": "17.08.2024",
+      "title": "Pudl a pudr",
+      "theatre": "Geisslers Hofcomoedianten",
+      "place": "Hrad Špilberk",
+      "city": "Brno",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "barokní"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "21.08.2024",
+      "title": "FC Rudý lev",
+      "theatre": "Divadlo v Celetné",
+      "place": "Divadlo v Celetné",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "22.08.2024",
+      "title": "Bratrstvo kočičí pracky",
+      "theatre": "Činoherní studio Ústí",
+      "place": "Oblastní muzeum Ústí nad Labem",
+      "city": "Ústí nad Labem",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": 80,
+      "comment": ""
+    },
+    {
+      "date": "27.08.2024",
+      "title": "Koule",
+      "theatre": "Klicperovo divadlo",
+      "place": "Letní scéna pod Žižkovskou věží",
+      "city": "Praha",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
     },
     {
       "date": "03.09.2024",
@@ -816,6 +1152,20 @@
       "comment": ""
     },
     {
+      "date": "05.09.2024",
+      "title": "Šmejdi útočí",
+      "theatre": "Divadlo NoD",
+      "place": "Divadlo NoD",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativa"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
       "date": "07.09.2024",
       "title": "Hráči",
       "theatre": "Činoherní klub",
@@ -827,6 +1177,20 @@
         "činohra"
       ],
       "rating": 80,
+      "comment": ""
+    },
+    {
+      "date": "08.09.2024",
+      "title": "Černá sanitka",
+      "theatre": "Činoherní studio Ústí",
+      "place": "Český rozhlas Sever",
+      "city": "Ústí nad Labem",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
       "comment": ""
     },
     {
@@ -860,7 +1224,7 @@
     {
       "date": "16.09.2024",
       "title": "Zdeněk Adamec",
-      "theatre": "Divadlo Na zábradlí",
+      "theatre": "DAMU",
       "place": "Divadlo Na zábradlí",
       "city": "Praha",
       "host": false,
@@ -877,7 +1241,7 @@
       "theatre": "Ductus Deferens",
       "place": "Švandovo divadlo (Studio)",
       "city": "Praha",
-      "host": true,
+      "host": false,
       "removed": false,
       "genres": [
         "alternativa"
@@ -942,6 +1306,34 @@
       "comment": ""
     },
     {
+      "date": "28.09.2024",
+      "title": "Vykouření",
+      "theatre": "Husa na provázku",
+      "place": "Divadlo Archa+",
+      "city": "Praha",
+      "host": true,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "30.09.2024",
+      "title": "Nespoutaní",
+      "theatre": "Divadlo Bravo",
+      "place": "Divadlo Bravo",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "alternativa"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
       "date": "03.10.2024",
       "title": "Ucho",
       "theatre": "Divadlo na Vinohradech",
@@ -984,11 +1376,25 @@
       "comment": ""
     },
     {
+      "date": "08.10.2024",
+      "title": "Tragédie Liblice",
+      "theatre": "Vosto5",
+      "place": "Vzlet",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": null,
+      "comment": ""
+    },
+    {
       "date": "10.10.2024",
       "title": "Světáci",
       "theatre": "Divadlo F.X. Šaldy",
-      "place": "Divadlo F.X. Šaldy",
-      "city": "Praha",
+      "place": "Malé divadlo",
+      "city": "Liberec",
       "host": false,
       "removed": false,
       "genres": [
@@ -1057,7 +1463,7 @@
       "date": "29.10.2024",
       "title": "Kdo je tady praporčík?",
       "theatre": "Ductus Deferens",
-      "place": "Tvůrčí dům Elišky Peškové",
+      "place": "Peškovka",
       "city": "Praha",
       "host": true,
       "removed": false,
@@ -1112,7 +1518,7 @@
     {
       "date": "04.11.2024",
       "title": "Tělo tajné agentky",
-      "theatre": "Klicperovo divadlo HK",
+      "theatre": "Klicperovo divadlo",
       "place": "Divadlo pod Palmovkou",
       "city": "Praha",
       "host": true,
@@ -1378,7 +1784,7 @@
     {
       "date": "14.12.2024",
       "title": "A pak usnu a vstanu",
-      "theatre": "Klicperovo divadlo HK",
+      "theatre": "Klicperovo divadlo",
       "place": "Klicperovo divadlo",
       "city": "Hradec Králové",
       "host": false,
@@ -1401,6 +1807,20 @@
         "činohra"
       ],
       "rating": null,
+      "comment": ""
+    },
+    {
+      "date": "20.12.2024",
+      "title": "Lištičky",
+      "theatre": "Městská divadla pražská",
+      "place": "Divadlo ABC",
+      "city": "Praha",
+      "host": false,
+      "removed": false,
+      "genres": [
+        "činohra"
+      ],
+      "rating": 60,
       "comment": ""
     },
     {
@@ -3599,7 +4019,7 @@
         "studentské"
       ],
       "rating": 70,
-      "comment": "Viděno na premiéře a nyní s měsíčním odstupem. Repríza po více jak měsíci neztratila nic ze své síly a ovace běžného publika neopadly, jak tu kdosi měl obavy. Inscenace jede naplno, tvůrci zkouší co divák ještě zkousne. Ano, místy je to přestřelené, vulgární, některé postavy jsou vygradované až na hranu parodie. Ale chci zmínit úžasnou B. Bolíkovou, kterou skoro nepoznáte coby malého kluka, nebo svým způsobem dojemný securiťák Jarin - V.Kratochvíl (kterého bych někdy rád viděl ve větší roli). A nebo P.Nevyhoštěná se svou bezdomovkyní. Pánové Nágl, Lajfr a Košař... chválit nepotřebují."
+      "comment": "Viděno na premiéře a nyní s měsíčním odstupem. Repríza po více jak měsíci neztratila nic ze své síly a ovace běžného publika\" neopadly"
     }
   ]
 }
